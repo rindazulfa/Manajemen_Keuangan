@@ -156,10 +156,10 @@
                                 <a class="nav-link" href="#"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="/pemasukan"><i class="fa fa-fw fa-user-circle"></i>Pemasukan <span class="badge badge-success">6</span></a>
+                                <a class="nav-link" href="/pemasukan"><i class="far fa-money-bill-alt"></i>Pemasukan <span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="/pengeluaran"><i class="fa fa-fw fa-user-circle"></i>Pengeluaran <span class="badge badge-success">6</span></a>
+                                <a class="nav-link" href="/pengeluaran"><i class="fas fa-shopping-cart"></i>Pengeluaran <span class="badge badge-success">6</span></a>
                             </li>
                             
                         </ul>
