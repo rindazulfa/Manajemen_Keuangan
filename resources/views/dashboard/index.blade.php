@@ -100,8 +100,8 @@
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="card">
             <h5 class="card-header">Arus Keuangan per Periode</h5>
-            <div class="card-body">
-                <canvas id="chart_pengeluaran"></canvas>
+            <div class="card-body" >
+                <canvas id="myChart"></canvas>
             </div>
         </div>
     </div>
@@ -152,7 +152,7 @@
                             <td>$80.00</td>
                             <td><span class="badge-dot badge-success mr-1"></span>Delivered </td>
                         </tr>
-                        
+
                     </tbody>
                 </table>
             </div>
@@ -169,8 +169,7 @@
 @endsection
 
 @push('script')
-<!-- 
-<script src="https://code.highcharts.com/highcharts.js"></script>
+{{-- <script src="https://code.highcharts.com/highcharts.js"></script>
 
 <script>
 Highcharts.chart('container', {
@@ -238,15 +237,53 @@ Highcharts.chart('container', {
 
     }]
 });
-</script> -->
-
+</script> --}}
 <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+{{-- <script>
     $.ajax({
         url: "/dashboard/chart-expense",
         type: "GET",
         dataType: 'json',
         success: function(rtnData) {
-            console.log(rtnData)
+            // console.log(rtnData)
             $.each(rtnData, function(dataType, data) {
                 console.log(dataType)
                 console.log(data);
@@ -254,8 +291,8 @@ Highcharts.chart('container', {
                 var config = {
                     type: data.type,
                     data: {
-                        datasets: data.datasets,
-                        labels: data.labels
+                        datasets: data,
+                        labels: ['pengeularan','pemasukan']
                     },
                     options: {
                         responsive: true,
@@ -265,6 +302,7 @@ Highcharts.chart('container', {
                         }
                     }
                 };
+                console.log(config);
                 window.myPie = new Chart(ctx, config);
             });
         },
@@ -273,6 +311,43 @@ Highcharts.chart('container', {
             console.log(rtnData + " asdnjanj")
         }
     });
-</script>
+</script> --}}
 
+
+
+{{-- <script>
+    $.ajax({
+        url: "/dashboard/chart-expense",
+        type: "GET",
+        dataType: 'json',
+        success: function(rtnData) {
+            // console.log(rtnData)
+            $.each(rtnData, function(dataType, data) {
+                console.log(dataType)
+                console.log(data);
+                var ctx = document.getElementById("chart_pengeluaran").getContext("2d");
+                var config = {
+                    type: data.type,
+                    data: {
+                        datasets: data,
+                        labels: ['pengeularan','pemasukan']
+                    },
+                    options: {
+                        responsive: true,
+                        title: {
+                            display: true,
+                            text: "Pengeluaran"
+                        }
+                    }
+                };
+                console.log(config);
+                window.myPie = new Chart(ctx, config);
+            });
+        },
+        error: function(rtnData) {
+            alert('error' + rtnData);
+            console.log(rtnData + " asdnjanj")
+        }
+    });
+</script> --}}
 @endpush
