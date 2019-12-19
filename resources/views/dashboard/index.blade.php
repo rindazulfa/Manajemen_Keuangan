@@ -99,7 +99,7 @@
     <!-- ============================================================== -->
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="card">
-            <h5 class="card-header">Bar Charts</h5>
+            <h5 class="card-header">Arus Keuangan per Periode</h5>
             <div class="card-body">
                 <canvas id="chart_pengeluaran"></canvas>
             </div>
@@ -114,20 +114,18 @@
 <!-- ============================================================== -->
 <div class="col-xl-9 col-lg-12 col-md-6 col-sm-12 col-12">
     <div class="card">
-        <h5 class="card-header">Recent Orders</h5>
+        <h5 class="card-header">Ringkasan Laporan</h5>
         <div class="card-body p-0">
             <div class="table-responsive">
                 <table class="table">
                     <thead class="bg-light">
                         <tr class="border-0">
-                            <th class="border-0">#</th>
+                            <th class="border-0">No</th>
                             <th class="border-0">Image</th>
-                            <th class="border-0">Product Name</th>
-                            <th class="border-0">Product Id</th>
+                            <th class="border-0">Category</th>
+                            <th class="border-0">Day</th>
                             <th class="border-0">Quantity</th>
                             <th class="border-0">Price</th>
-                            <th class="border-0">Order Time</th>
-                            <th class="border-0">Customer</th>
                             <th class="border-0">Status</th>
                         </tr>
                     </thead>
@@ -137,12 +135,10 @@
                             <td>
                                 <div class="m-r-10"><img src="assets/images/product-pic.jpg" alt="user" class="rounded" width="45"></div>
                             </td>
-                            <td>Product #1 </td>
-                            <td>id000001 </td>
-                            <td>20</td>
+                            <td>Bisnis </td>
+                            <td>2019-12-19</td>
+                            <td>2</td>
                             <td>$80.00</td>
-                            <td>27-08-2018 01:22:12</td>
-                            <td>Patricia J. King </td>
                             <td><span class="badge-dot badge-brand mr-1"></span>InTransit </td>
                         </tr>
                         <tr>
@@ -150,43 +146,13 @@
                             <td>
                                 <div class="m-r-10"><img src="assets/images/product-pic-2.jpg" alt="user" class="rounded" width="45"></div>
                             </td>
-                            <td>Product #2 </td>
-                            <td>id000002 </td>
-                            <td>12</td>
-                            <td>$180.00</td>
-                            <td>25-08-2018 21:12:56</td>
-                            <td>Rachel J. Wicker </td>
+                            <td>Bisnis </td>
+                            <td>2019-12-19</td>
+                            <td>2</td>
+                            <td>$80.00</td>
                             <td><span class="badge-dot badge-success mr-1"></span>Delivered </td>
                         </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>
-                                <div class="m-r-10"><img src="assets/images/product-pic-3.jpg" alt="user" class="rounded" width="45"></div>
-                            </td>
-                            <td>Product #3 </td>
-                            <td>id000003 </td>
-                            <td>23</td>
-                            <td>$820.00</td>
-                            <td>24-08-2018 14:12:77</td>
-                            <td>Michael K. Ledford </td>
-                            <td><span class="badge-dot badge-success mr-1"></span>Delivered </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>
-                                <div class="m-r-10"><img src="assets/images/product-pic-4.jpg" alt="user" class="rounded" width="45"></div>
-                            </td>
-                            <td>Product #4 </td>
-                            <td>id000004 </td>
-                            <td>34</td>
-                            <td>$340.00</td>
-                            <td>23-08-2018 09:12:35</td>
-                            <td>Michael K. Ledford </td>
-                            <td><span class="badge-dot badge-success mr-1"></span>Delivered </td>
-                        </tr>
-                        <tr>
-                            <td colspan="9"><a href="#" class="btn btn-outline-light float-right">View Details</a></td>
-                        </tr>
+                        
                     </tbody>
                 </table>
             </div>
@@ -203,6 +169,76 @@
 @endsection
 
 @push('script')
+<!-- 
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+<script>
+Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Monthly Average Rainfall'
+    },
+    subtitle: {
+        text: 'Source: WorldClimate.com'
+    },
+    xAxis: {
+        categories: [
+            'Jan',
+            'Feb',
+            'Mar',
+            'Apr',
+            'May',
+            'Jun',
+            'Jul',
+            'Aug',
+            'Sep',
+            'Oct',
+            'Nov',
+            'Dec'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Rainfall (mm)'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Tokyo',
+        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+
+    }, {
+        name: 'New York',
+        data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+
+    }, {
+        name: 'London',
+        data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+
+    }, {
+        name: 'Berlin',
+        data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+
+    }]
+});
+</script> -->
 
 <script>
     $.ajax({
@@ -213,7 +249,7 @@
             console.log(rtnData)
             $.each(rtnData, function(dataType, data) {
                 console.log(dataType)
-                console.log(data.date);
+                console.log(data);
                 var ctx = document.getElementById("chart_pengeluaran").getContext("2d");
                 var config = {
                     type: data.type,

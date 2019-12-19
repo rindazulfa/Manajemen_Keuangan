@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
+
 class DashboardController extends Controller
 {
     /**
@@ -18,7 +19,8 @@ class DashboardController extends Controller
         $expenses = DB::table('expenses')->select('total')->sum('total');
         $data['incomes'] = $incomes;
         $data['expenses'] = $expenses;
-
+        
+        
         return view('dashboard.index', $data);
     }
 
@@ -93,7 +95,10 @@ class DashboardController extends Controller
         $date = DB::table('incomes')->select('date', 'total')->get();
 
         $data['labels'] = $date;
-        
+
         return response()->json($data);
     }
+
+
+    
 }
