@@ -28,7 +28,7 @@
         <!-- ============================================================== -->
         <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
-                <a class="navbar-brand" href="index.html">Concept</a>
+                <a class="navbar-brand" href="index.html">B</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -153,7 +153,7 @@
                                 Menu
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
+                                <a class="nav-link" href="/dashboard"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="/pemasukan"><i class="far fa-money-bill-alt"></i>Pemasukan <span class="badge badge-success">6</span></a>
@@ -204,7 +204,12 @@
     <script src="{{asset('vendor/charts/c3charts/c3.min.js')}}"></script>
     <script src="{{asset('vendor/charts/c3charts/d3-5.4.0.min.js')}}"></script>
     <script src="{{asset('vendor/charts/c3charts/C3chartjs.js')}}"></script>
+    <script src="{{asset('vendor/charts/charts-bundle/Chart.bundle.js')}}"></script>
+    <script src="{{asset('vendor/charts/charts-bundle/chartjs.js')}}"></script>
     <script src="{{asset('libs/js/dashboard-ecommerce.js')}}"></script>
+    
+    @stack('script')
+    
 </body>
 
 </html>
