@@ -40,9 +40,10 @@
             <div class="card-body">
                 <div class="d-inline-block">
                     <h5 class="text-muted">Total Pemasukan</h5>
-                    <h2 class="mb-0">Rp {{ $incomes }}
-                        <</h2> </div> <div class="float-right icon-circle-medium  icon-box-lg  bg-brand-light mt-1">
-                            <i class="fa fa-money-bill-alt fa-fw fa-sm text-brand"></i>
+                    <h2 class="mb-0">Rp {{ $incomes }}</h2>
+                </div>
+                <div class="float-right icon-circle-small  icon-box-sm  bg-brand-light mt-1">
+                    <i class="fa fa-money-bill-alt fa-fw fa-sm text-brand"></i>
                 </div>
             </div>
         </div>
@@ -50,7 +51,7 @@
     <!-- ============================================================== -->
     <!-- end total pemasukan   -->
     <!-- ============================================================== -->
-     <!-- ============================================================== -->
+    <!-- ============================================================== -->
     <!-- sisa uang   -->
     <!-- ============================================================== -->
     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -58,9 +59,10 @@
             <div class="card-body">
                 <div class="d-inline-block">
                     <h5 class="text-muted">Sisa Uang</h5>
-                    <h2 class="mb-0">Rp {{ $incomes }}
-                        <</h2> </div> <div class="float-right icon-circle-medium  icon-box-lg  bg-brand-light mt-1">
-                            <i class="fa fa-money-bill-alt fa-fw fa-sm text-brand"></i>
+                    <h2 class="mb-0">Rp {{ $expenses-$incomes }}</h2>
+                </div>
+                <div class="float-right icon-circle-small  icon-box-sm  bg-brand-light mt-1">
+                    <i class="fa fa-money-bill-alt fa-fw fa-sm text-brand"></i>
                 </div>
             </div>
         </div>
@@ -95,7 +97,7 @@
     <!-- ============================================================== -->
     <!-- bar chart  -->
     <!-- ============================================================== -->
-    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="card">
             <h5 class="card-header">Bar Charts</h5>
             <div class="card-body">
