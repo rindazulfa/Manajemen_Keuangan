@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Income;
 
 
 class DashboardController extends Controller
@@ -19,8 +20,12 @@ class DashboardController extends Controller
         $expenses = DB::table('expenses')->select('total')->sum('total');
         $data['incomes'] = $incomes;
         $data['expenses'] = $expenses;
-        
-        
+
+        $income = Income::select('total')->get();
+        $a = [];
+        foreach($income as $incomes){
+            $a[] = $incomes->total;
+        }
         return view('dashboard.index', $data);
     }
 
@@ -92,13 +97,17 @@ class DashboardController extends Controller
 
     public function chartExpense()
     {
-        $date = DB::table('incomes')->select('date', 'total')->get();
+        $date = DB::table('incomes')->select('date','total')->get();
 
         $data['labels'] = $date;
+        // $data = [];
+        // foreach($date as $row){
+        //     $data[] = $row->date;
+        // }
 
         return response()->json($data);
     }
 
 
-    
+
 }

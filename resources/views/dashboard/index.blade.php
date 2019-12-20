@@ -238,7 +238,7 @@ Highcharts.chart('container', {
     }]
 });
 </script> --}}
-<script>
+{{-- <script>
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'bar',
@@ -249,19 +249,9 @@ Highcharts.chart('container', {
                 data: [12, 19, 3, 5, 2, 3],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
                 ],
                 borderColor: [
                     'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
                 ],
                 borderWidth: 1
             }]
@@ -276,30 +266,59 @@ Highcharts.chart('container', {
             }
         }
     });
-    </script>
-{{-- <script>
+</script> --}}
+<script>
     $.ajax({
         url: "/dashboard/chart-expense",
         type: "GET",
         dataType: 'json',
         success: function(rtnData) {
-            // console.log(rtnData)
             $.each(rtnData, function(dataType, data) {
-                console.log(dataType)
                 console.log(data);
-                var ctx = document.getElementById("chart_pengeluaran").getContext("2d");
+                var aku = [];
+                 data.forEach((res) => {
+                        var coba = new Date(res['date']).toLocaleString();
+                        aku.push(coba);
+
+                    });
+                    console.log(aku);
+
+                var ctx = document.getElementById("myChart").getContext("2d");
                 var config = {
-                    type: data.type,
+                    type: 'line',
                     data: {
-                        datasets: data,
-                        labels: ['pengeularan','pemasukan']
+                        labels:  [new Date("2019-3-15 13:3").toLocaleString(), new Date("2019-4-25 13:2").toLocaleString()],
+                        datasets: [{
+                            label: '# of Votes',
+                            data: [{
+                                    x: new Date("2019-3-15 13:3"), y: 175
+                                }, {
+                                    x: new Date("2019-4-25 13:2"), y: 177
+                                }],
+                            backgroundColor:
+                                'rgba(255, 99, 132, 0.2)',
+                            borderColor:
+                                'rgba(255, 99, 132, 1)',
+                            borderWidth: 1
+                        }]
+
+
                     },
                     options: {
                         responsive: true,
                         title: {
                             display: true,
                             text: "Pengeluaran"
+                        },
+                        scales: {
+                            xAxes: [{
+                                type: 'time',
+                                time: {
+                                    unit: 'week'
+                                }
+                            }]
                         }
+
                     }
                 };
                 console.log(config);
@@ -311,11 +330,17 @@ Highcharts.chart('container', {
             console.log(rtnData + " asdnjanj")
         }
     });
-</script> --}}
+
+    function getPreviousMonths() {
+  var months = [];
+  months = Array.apply(0, Array(12)).map(function(_,i){return moment().month(i).toISOString()})
+  return months;
+}
+</script>
 
 
-
-{{-- <script>
+{{--
+<script>
     $.ajax({
         url: "/dashboard/chart-expense",
         type: "GET",
@@ -323,25 +348,32 @@ Highcharts.chart('container', {
         success: function(rtnData) {
             // console.log(rtnData)
             $.each(rtnData, function(dataType, data) {
-                console.log(dataType)
-                console.log(data);
-                var ctx = document.getElementById("chart_pengeluaran").getContext("2d");
-                var config = {
-                    type: data.type,
+                console.log(data[0]['total']);
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'bar',
                     data: {
-                        datasets: data,
-                        labels: ['pengeularan','pemasukan']
+                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                        datasets: [{
+                            label: '# of Votes',
+                            data: [data[0]['total']],
+                            backgroundColor:
+                                'rgba(255, 99, 132, 0.2)',
+                            borderColor:
+                                'rgba(255, 99, 132, 1)',
+                            borderWidth: 1
+                        }]
                     },
                     options: {
-                        responsive: true,
-                        title: {
-                            display: true,
-                            text: "Pengeluaran"
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
                         }
                     }
-                };
-                console.log(config);
-                window.myPie = new Chart(ctx, config);
+                });
             });
         },
         error: function(rtnData) {
