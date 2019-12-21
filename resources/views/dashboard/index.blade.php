@@ -99,8 +99,11 @@
     <!-- ============================================================== -->
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="card">
+
             <h5 class="card-header">Arus Keuangan per Periode</h5>
             <div class="card-body" >
+                    <button type="submit" class="btn btn-primary" onclick="updatechart()">month</button>
+                    <button type="submit" class="btn btn-success" onclick="updatechartweek()">week</button>
                 <canvas id="myChart"></canvas>
             </div>
         </div>
@@ -267,7 +270,9 @@ Highcharts.chart('container', {
         }
     });
 </script> --}}
-<script>
+<script type="text/javascript">
+    var chartku;
+    var config;
     $.ajax({
         url: "/dashboard/chart-expense",
         type: "GET",
@@ -276,25 +281,26 @@ Highcharts.chart('container', {
             $.each(rtnData, function(dataType, data) {
                 console.log(data);
                 var aku = [];
+                var hello = [];
+                var cobarray = [];
                  data.forEach((res) => {
                         var coba = new Date(res['date']).toLocaleString();
+                        var coba2 = new Date(res['date']);
+                        var total = res['total'];
+                        var x = {};
+                        var y = {};
+                        var jumlah = {x:coba2,y:total};
                         aku.push(coba);
-
+                        hello.push(jumlah);
                     });
-                    console.log(aku);
-
                 var ctx = document.getElementById("myChart").getContext("2d");
-                var config = {
+                config = {
                     type: 'line',
                     data: {
-                        labels:  [new Date("2019-3-15 13:3").toLocaleString(), new Date("2019-4-25 13:2").toLocaleString()],
+                        labels:  aku,
                         datasets: [{
-                            label: '# of Votes',
-                            data: [{
-                                    x: new Date("2019-3-15 13:3"), y: 175
-                                }, {
-                                    x: new Date("2019-4-25 13:2"), y: 177
-                                }],
+                            label: 'week',
+                            data: hello,
                             backgroundColor:
                                 'rgba(255, 99, 132, 0.2)',
                             borderColor:
@@ -308,7 +314,7 @@ Highcharts.chart('container', {
                         responsive: true,
                         title: {
                             display: true,
-                            text: "Pengeluaran"
+                            text: "Pemasukan"
                         },
                         scales: {
                             xAxes: [{
@@ -321,8 +327,10 @@ Highcharts.chart('container', {
 
                     }
                 };
+
+                chartku = new Chart(ctx, config);
                 console.log(config);
-                window.myPie = new Chart(ctx, config);
+                window.myPie = chartku;
             });
         },
         error: function(rtnData) {
@@ -330,6 +338,25 @@ Highcharts.chart('container', {
             console.log(rtnData + " asdnjanj")
         }
     });
+
+    function updatechart()
+    {
+     chartku.data.datasets[0].label = 'month';
+     chartku.options.scales.xAxes[0].time = {
+         unit: 'month'
+     };
+     chartku.update();
+    //  console.log(config);
+    }
+
+    function updatechartweek()
+    {
+        chartku.data.datasets[0].label = 'week';
+        chartku.options.scales.xAxes[0].time = {
+         unit: 'week'
+        };
+        chartku.update();
+    }
 
     function getPreviousMonths() {
   var months = [];
