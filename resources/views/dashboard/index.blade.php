@@ -249,7 +249,6 @@
          unit: 'month'
      };
      chartku.update();
-    //  console.log(config);
     }
 
     function updatechartweek()
@@ -260,11 +259,6 @@
         };
         chartku.update();
     }
-
-    function getPreviousMonths() {
-  var months = [];
-  months = Array.apply(0, Array(12)).map(function(_,i){return moment().month(i).toISOString()})
-  return months;
 }
 </script>
 
