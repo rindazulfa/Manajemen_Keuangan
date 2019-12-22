@@ -259,7 +259,7 @@
         };
         chartku.update();
     }
-}
+
 </script>
 
 @endpush

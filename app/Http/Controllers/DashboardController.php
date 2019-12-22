@@ -97,7 +97,7 @@ class DashboardController extends Controller
 
     public function chartExpense()
     {
-        $date = DB::table('incomes')->select('date','total')->get();
+        $date = DB::table('incomes')->select('date','total')->orderBy('date','ASC')->get();
 
         $data['labels'] = $date;
         // $data = [];
