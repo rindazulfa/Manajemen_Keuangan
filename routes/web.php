@@ -18,6 +18,7 @@ Route::get('/', function () {
     //master- nama file
 });
 
+Route::get('/dashboard/chart-income', 'DashboardController@chartIncome');
 Route::get('/dashboard/chart-expense', 'DashboardController@chartExpense');
 Route::resource('dashboard', 'DashboardController');
 Route::resource('pemasukan', 'IncomeController');

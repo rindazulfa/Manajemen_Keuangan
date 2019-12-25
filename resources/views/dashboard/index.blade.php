@@ -100,11 +100,25 @@
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="card">
 
-            <h5 class="card-header">Arus Keuangan per Periode</h5>
+            <h5 class="card-header">Arus Pemasukan Keuangan per Periode</h5>
             <div class="card-body" >
                     <button type="submit" class="btn btn-primary" onclick="updatechart()">month</button>
                     <button type="submit" class="btn btn-success" onclick="updatechartweek()">week</button>
+                    <button type="submit" class="btn btn-danger" onclick="updatechartday()">day</button>
                 <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card">
+
+            <h5 class="card-header">Arus Pengeluaran Keuangan per Periode</h5>
+            <div class="card-body" >
+                    <button type="submit" class="btn btn-primary" onclick="updatechartexpense()">month</button>
+                    <button type="submit" class="btn btn-success" onclick="updatechartweekexpense()">week</button>
+                    <button type="submit" class="btn btn-danger" onclick="updatechartdayexpense()">day</button>
+                <canvas id="chartexpense"></canvas>
             </div>
         </div>
     </div>
@@ -172,12 +186,13 @@
 @endsection
 
 @push('script')
+<script src="https://cdn.jsdelivr.net/npm/moment@latest/moment.min.js"></script>
 
 <script type="text/javascript">
     var chartku;
     var config;
     $.ajax({
-        url: "/dashboard/chart-expense",
+        url: "/dashboard/chart-income",
         type: "GET",
         dataType: 'json',
         success: function(rtnData) {
@@ -195,7 +210,10 @@
                         var jumlah = {x:coba2,y:total};
                         aku.push(coba);
                         hello.push(jumlah);
+                        var month = Math.floor((coba2.getMonth() + 3) / 3);
+                        console.log(month);
                     });
+
                 var ctx = document.getElementById("myChart").getContext("2d");
                 config = {
                     type: 'line',
@@ -223,12 +241,14 @@
                             xAxes: [{
                                 type: 'time',
                                 time: {
-                                    unit: 'week'
+                                    unit: 'week',
+
                                 }
                             }]
                         }
 
-                    }
+                    },
+
                 };
 
                 chartku = new Chart(ctx, config);
@@ -256,6 +276,119 @@
         chartku.data.datasets[0].label = 'week';
         chartku.options.scales.xAxes[0].time = {
          unit: 'week'
+        };
+        chartku.update();
+    }
+
+    function updatechartday()
+    {
+        chartku.data.datasets[0].label = 'day';
+        chartku.options.scales.xAxes[0].time = {
+         unit: 'day'
+        };
+        chartku.update();
+    }
+
+</script>
+
+
+<script type="text/javascript">
+    var chartku;
+    var config;
+    $.ajax({
+        url: "/dashboard/chart-expense",
+        type: "GET",
+        dataType: 'json',
+        success: function(rtnData) {
+            $.each(rtnData, function(dataType, data) {
+                console.log(data);
+                var aku = [];
+                var hello = [];
+                var cobarray = [];
+                 data.forEach((res) => {
+                        var coba = new Date(res['date']).toLocaleString();
+                        var coba2 = new Date(res['date']);
+                        var total = res['total'];
+                        var x = {};
+                        var y = {};
+                        var jumlah = {x:coba2,y:total};
+                        aku.push(coba);
+                        hello.push(jumlah);
+                        var month = Math.floor((coba2.getMonth() + 3) / 3);
+                        console.log(month);
+                    });
+
+                var ctx = document.getElementById("chartexpense").getContext("2d");
+                config = {
+                    type: 'line',
+                    data: {
+                        labels:  aku,
+                        datasets: [{
+                            label: 'week',
+                            data: hello,
+                            backgroundColor:
+                                'rgba(255, 99, 132, 0.2)',
+                            borderColor:
+                                'rgba(255, 99, 132, 1)',
+                            borderWidth: 1
+                        }]
+
+
+                    },
+                    options: {
+                        responsive: true,
+                        title: {
+                            display: true,
+                            text: "Pengeluaran"
+                        },
+                        scales: {
+                            xAxes: [{
+                                type: 'time',
+                                time: {
+                                    unit: 'week',
+
+                                }
+                            }]
+                        }
+
+                    },
+
+                };
+
+                chartku = new Chart(ctx, config);
+                console.log(config);
+                window.myPie = chartku;
+            });
+        },
+        error: function(rtnData) {
+            alert('error' + rtnData);
+            console.log(rtnData + " asdnjanj")
+        }
+    });
+
+    function updatechartexpense()
+    {
+     chartku.data.datasets[0].label = 'month';
+     chartku.options.scales.xAxes[0].time = {
+         unit: 'month'
+     };
+     chartku.update();
+    }
+
+    function updatechartweekexpense()
+    {
+        chartku.data.datasets[0].label = 'week';
+        chartku.options.scales.xAxes[0].time = {
+         unit: 'week'
+        };
+        chartku.update();
+    }
+
+    function updatechartdayexpense()
+    {
+        chartku.data.datasets[0].label = 'day';
+        chartku.options.scales.xAxes[0].time = {
+         unit: 'day'
         };
         chartku.update();
     }
