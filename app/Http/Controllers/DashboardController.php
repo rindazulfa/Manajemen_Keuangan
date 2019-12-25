@@ -95,7 +95,7 @@ class DashboardController extends Controller
         //
     }
 
-    public function chartExpense()
+    public function chartIncome()
     {
         $date = DB::table('incomes')->select('date','total')->orderBy('date','ASC')->get();
 
@@ -108,6 +108,12 @@ class DashboardController extends Controller
         return response()->json($data);
     }
 
+    public function chartExpense()
+    {
+        $date = DB::table('expenses')->select('date','total')->orderBy('date','ASC')->get();
+        $data['labels'] = $date;
+        return response()->json($data);
+    }
 
 
 }
