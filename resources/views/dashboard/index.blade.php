@@ -105,6 +105,7 @@
                     <button type="submit" class="btn btn-primary" onclick="updatechart()">month</button>
                     <button type="submit" class="btn btn-success" onclick="updatechartweek()">week</button>
                     <button type="submit" class="btn btn-danger" onclick="updatechartday()">day</button>
+                    <button type="submit" class="btn btn-danger" onclick="gantiurl()">anjay</button>
                 <canvas id="myChart"></canvas>
             </div>
         </div>
@@ -188,9 +189,10 @@
 @push('script')
 <script src="https://cdn.jsdelivr.net/npm/moment@latest/moment.min.js"></script>
 
-<script type="text/javascript">
+{{-- <script type="text/javascript">
     var chartku;
     var config;
+    var urlku;
     $.ajax({
         url: "/dashboard/chart-income",
         type: "GET",
@@ -227,7 +229,16 @@
                             borderColor:
                                 'rgba(255, 99, 132, 1)',
                             borderWidth: 1
-                        }]
+                        },{
+                            label: 'week',
+                            data: hello,
+                            backgroundColor:
+                                'rgba(14, 103, 47, 0.2)',
+                            borderColor:
+                                'rgba(14, 103, 47, 1)',
+                            borderWidth: 1
+                        }
+                        ]
 
 
                     },
@@ -289,7 +300,7 @@
         chartku.update();
     }
 
-</script>
+</script> --}}
 
 
 <script type="text/javascript">
@@ -301,11 +312,27 @@
         dataType: 'json',
         success: function(rtnData) {
             $.each(rtnData, function(dataType, data) {
-                console.log(data);
+                // console.log(rtnData['labels']);
+                var eka = [];
+                var rinda = [];
+                var emboh = [];
+                rtnData['labels2'].forEach((res) => {
+                    var coba = new Date(res['date']).toLocaleString();
+                        var coba2 = new Date(res['date']);
+                        var total = res['total'];
+
+                        console.log(total);
+                        var x = {};
+                        var y = {};
+                        var jumlah = {x:coba2,y:total};
+                        eka.push(coba);
+                        rinda.push(jumlah);
+                });
+
                 var aku = [];
                 var hello = [];
                 var cobarray = [];
-                 data.forEach((res) => {
+                rtnData['labels'].forEach((res) => {
                         var coba = new Date(res['date']).toLocaleString();
                         var coba2 = new Date(res['date']);
                         var total = res['total'];
@@ -314,15 +341,14 @@
                         var jumlah = {x:coba2,y:total};
                         aku.push(coba);
                         hello.push(jumlah);
-                        var month = Math.floor((coba2.getMonth() + 3) / 3);
-                        console.log(month);
+                        // var month = Math.floor((coba2.getMonth() + 3) / 3);
                     });
 
                 var ctx = document.getElementById("chartexpense").getContext("2d");
                 config = {
                     type: 'line',
                     data: {
-                        labels:  aku,
+                        labels:  '',
                         datasets: [{
                             label: 'week',
                             data: hello,
@@ -330,6 +356,14 @@
                                 'rgba(255, 99, 132, 0.2)',
                             borderColor:
                                 'rgba(255, 99, 132, 1)',
+                            borderWidth: 1
+                        },{
+                            label: 'week',
+                            data: rinda,
+                            backgroundColor:
+                                'rgba(14, 103, 47, 0.2)',
+                            borderColor:
+                                'rgba(14, 103, 47, 1)',
                             borderWidth: 1
                         }]
 
@@ -356,13 +390,12 @@
                 };
 
                 chartku = new Chart(ctx, config);
-                console.log(config);
                 window.myPie = chartku;
             });
         },
         error: function(rtnData) {
             alert('error' + rtnData);
-            console.log(rtnData + " asdnjanj")
+            console.log(rtnData + " asdnjanj");
         }
     });
 

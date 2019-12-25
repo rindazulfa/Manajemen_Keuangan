@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Income;
+use Illuminate\Http\Response;
 
 
 class DashboardController extends Controller
@@ -111,8 +112,9 @@ class DashboardController extends Controller
     public function chartExpense()
     {
         $date = DB::table('expenses')->select('date','total')->orderBy('date','ASC')->get();
-        $data['labels'] = $date;
-        return response()->json($data);
+        $date2 = DB::table('incomes')->select('date','total')->orderBy('date','ASC')->get();
+        // $data['labels'] = $date;
+        return response()->json(['labels' => $date,'labels2'=>$date2]);
     }
 
 
