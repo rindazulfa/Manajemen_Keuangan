@@ -344,11 +344,14 @@
                         // var month = Math.floor((coba2.getMonth() + 3) / 3);
                     });
 
+                var apasih = {};
+                var westah = {aku,eka};
+                console.log(westah);
                 var ctx = document.getElementById("chartexpense").getContext("2d");
                 config = {
                     type: 'line',
                     data: {
-                        labels:  '',
+                        labels:  westah,
                         datasets: [{
                             label: 'week',
                             data: hello,
@@ -373,7 +376,7 @@
                         responsive: true,
                         title: {
                             display: true,
-                            text: "Pengeluaran"
+                            text: "Pengeluaran dan Pemasukan"
                         },
                         scales: {
                             xAxes: [{
