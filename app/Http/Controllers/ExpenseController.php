@@ -14,28 +14,14 @@ class ExpenseController extends Controller
      */
     public function index()
     {
-        $expenses = DB::table('expenses')->get();
-        // $category = DB::table('expense_categories')->where('id',"=", $expenses->expense_categories_id)->pluck('name')->first();
-        // $data['expenses'] = $expenses;
-        $arr = [];
+        // Tanggal, Nama, Total, Penerima, Kategori, Metode
+        $expenses = DB::table('expenses')
+            ->select('expenses.id', 'expenses.date', 'expenses.name as name', 'expenses.total', 'expenses.to', 'expense_categories.name as category', 'methods.name as method')
+            ->join('expense_categories', 'expenses.expense_categories_id', '=', 'expense_categories.id')
+            ->join('methods', 'expenses.methods_id', '=', 'methods.id')
+            ->get();
 
-        for ($i=0; $i < count($expenses); $i++) { 
-            $category = DB::table('expense_categories')->where('id',"=", $expenses[$i]->expense_categories_id)->pluck('name')->first();
-            $method = DB::table('methods')->where('id',"=", $expenses[$i]->methods_id)->pluck('name')->first();
-            $x['date'] = $expenses[$i]->date;
-            $x['name'] = $expenses[$i]->name;
-            $x['total'] = $expenses[$i]->total;
-            $x['to'] = $expenses[$i]->to;
-            $x['category'] = $category;
-            // $x['method_id'] = $method;
-           
-
-            array_push($arr, $x);
-        }
-        $data['expenses'] = $arr;
-
-
-
+        $data['expenses'] = $expenses;
         return view('pengeluaran.index', $data);
         
     }

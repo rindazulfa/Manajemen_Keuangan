@@ -45,14 +45,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($expenses as $key)
+                            @foreach($expenses as $shir)
                             <tr>
-                                <td>{{$key['date']}}</td>
-                                <td>{{$key['name']}}</td>
-                                <td>{{$key['total']}}</td>
-                                <td>{{$key['to']}}</td>
-                                <td>{{$key['expense_categories_id']}}</td>
-                                <td>{{$key['method_id']}}</td>
+                                <td>{{ $shir->date }}</td>
+                                <td>{{ $shir->name }}</td>
+                                <td>{{ $shir->total }}</td>
+                                <td>{{ $shir->to }}</td>
+                                <td>{{ $shir->category }}</td>
+                                <td>{{ $shir->method }}</td>
                             </tr>
                             @endforeach
                         </tbody>
