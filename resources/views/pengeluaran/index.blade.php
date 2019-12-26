@@ -47,12 +47,12 @@
                         <tbody>
                             @foreach($expenses as $key)
                             <tr>
-                                <td>{{$key->date}}</td>
-                                <td>{{$key->name}}</td>
-                                <td>{{$key->total}}</td>
-                                <td>{{$key->to}}</td>
-                                <td>{{$key->expense_categories_id}}</td>
-                                <td>{{$key->methods_id}}</td>
+                                <td>{{$key['date']}}</td>
+                                <td>{{$key['name']}}</td>
+                                <td>{{$key['total']}}</td>
+                                <td>{{$key['to']}}</td>
+                                <td>{{$key['expense_categories_id']}}</td>
+                                <td>{{$key['method_id']}}</td>
                             </tr>
                             @endforeach
                         </tbody>

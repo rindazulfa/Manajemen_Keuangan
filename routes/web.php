@@ -14,7 +14,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('master');
+    return redirect('/dashboard');
     //master- nama file
 });
 

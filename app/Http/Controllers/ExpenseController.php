@@ -15,8 +15,29 @@ class ExpenseController extends Controller
     public function index()
     {
         $expenses = DB::table('expenses')->get();
-        $data['expenses'] = $expenses;
+        // $category = DB::table('expense_categories')->where('id',"=", $expenses->expense_categories_id)->pluck('name')->first();
+        // $data['expenses'] = $expenses;
+        $arr = [];
+
+        for ($i=0; $i < count($expenses); $i++) { 
+            $category = DB::table('expense_categories')->where('id',"=", $expenses[$i]->expense_categories_id)->pluck('name')->first();
+            $method = DB::table('methods')->where('id',"=", $expenses[$i]->methods_id)->pluck('name')->first();
+            $x['date'] = $expenses[$i]->date;
+            $x['name'] = $expenses[$i]->name;
+            $x['total'] = $expenses[$i]->total;
+            $x['to'] = $expenses[$i]->to;
+            $x['category'] = $category;
+            // $x['method_id'] = $method;
+           
+
+            array_push($arr, $x);
+        }
+        $data['expenses'] = $arr;
+
+
+
         return view('pengeluaran.index', $data);
+        
     }
 
     /**

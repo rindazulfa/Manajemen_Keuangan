@@ -97,7 +97,7 @@
     <!-- ============================================================== -->
     <!-- bar chart  -->
     <!-- ============================================================== -->
-    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+    <!-- <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="card">
 
             <h5 class="card-header">Arus Pemasukan Keuangan per Periode</h5>
@@ -109,16 +109,28 @@
                 <canvas id="myChart"></canvas>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="card">
 
             <h5 class="card-header">Arus Pengeluaran Keuangan per Periode</h5>
-            <div class="card-body" >
-                    <button type="submit" class="btn btn-primary" onclick="updatechartexpense()">month</button>
-                    <button type="submit" class="btn btn-success" onclick="updatechartweekexpense()">week</button>
-                    <button type="submit" class="btn btn-danger" onclick="updatechartdayexpense()">day</button>
+            <div class="card-body">
+
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-primary" onclick="updatechartexpense()">
+                        <input type="radio" name="options">Bulan
+                    </label>
+                    <label class="btn btn-primary" onclick="updatechartweekexpense()">
+                        <input type="radio" name="options">Minggu
+                    </label>
+                    <label class="btn btn-primary" onclick="updatechartdayexpense()">
+                        <input type="radio" name="options">Hari
+                    </label>
+                </div>
+                <!-- <button type="submit" class="btn btn-primary" onclick="updatechartexpense()">Bulan</button>
+                <button type="submit" class="btn btn-success" onclick="updatechartweekexpense()">Minggu</button>
+                <button type="submit" class="btn btn-danger" onclick="updatechartdayexpense()">Hari</button> -->
                 <canvas id="chartexpense"></canvas>
             </div>
         </div>
@@ -139,20 +151,30 @@
                     <thead class="bg-light">
                         <tr class="border-0">
                             <th class="border-0">No</th>
-                            <th class="border-0">Image</th>
-                            <th class="border-0">Category</th>
-                            <th class="border-0">Day</th>
-                            <th class="border-0">Quantity</th>
-                            <th class="border-0">Price</th>
+                            <th class="border-0">Tanggal</th>
+                            <th class="border-0">Nama</th>
+                            <th class="border-0">Kategori</th>
+                            <th class="border-0">Total</th>
                             <th class="border-0">Status</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($transaction as $key)
                         <tr>
                             <td>1</td>
-                            <td>
-                                <div class="m-r-10"><img src="assets/images/product-pic.jpg" alt="user" class="rounded" width="45"></div>
-                            </td>
+                            <td>{{ $key['date'] }}</td>
+                            <td>{{ $key['name'] }}</td>
+                            <td>{{ $key['category'] }}</td>
+                            <td>{{ $key['total'] }}</td>
+                            @if($key['type'] == 'Income')
+                            <td><span class="badge-dot badge-success mr-1"></span>Incomes</td>
+                            @else
+                            <td><span class="badge-dot badge-brand mr-1"></span>Exepense</td>
+                            @endif
+                        </tr>
+
+                        <!-- <tr>
+                            <td>1</td>
                             <td>Bisnis </td>
                             <td>2019-12-19</td>
                             <td>2</td>
@@ -161,16 +183,13 @@
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>
-                                <div class="m-r-10"><img src="assets/images/product-pic-2.jpg" alt="user" class="rounded" width="45"></div>
-                            </td>
                             <td>Bisnis </td>
                             <td>2019-12-19</td>
                             <td>2</td>
                             <td>$80.00</td>
                             <td><span class="badge-dot badge-success mr-1"></span>Delivered </td>
-                        </tr>
-
+                        </tr> -->
+                    @endforeach
                     </tbody>
                 </table>
             </div>
@@ -318,55 +337,60 @@
                 var emboh = [];
                 rtnData['labels2'].forEach((res) => {
                     var coba = new Date(res['date']).toLocaleString();
-                        var coba2 = new Date(res['date']);
-                        var total = res['total'];
+                    var coba2 = new Date(res['date']);
+                    var total = res['total'];
 
-                        console.log(total);
-                        var x = {};
-                        var y = {};
-                        var jumlah = {x:coba2,y:total};
-                        eka.push(coba);
-                        rinda.push(jumlah);
+                    console.log(total);
+                    var x = {};
+                    var y = {};
+                    var jumlah = {
+                        x: coba2,
+                        y: total
+                    };
+                    eka.push(coba);
+                    rinda.push(jumlah);
                 });
 
                 var aku = [];
                 var hello = [];
                 var cobarray = [];
                 rtnData['labels'].forEach((res) => {
-                        var coba = new Date(res['date']).toLocaleString();
-                        var coba2 = new Date(res['date']);
-                        var total = res['total'];
-                        var x = {};
-                        var y = {};
-                        var jumlah = {x:coba2,y:total};
-                        aku.push(coba);
-                        hello.push(jumlah);
-                        // var month = Math.floor((coba2.getMonth() + 3) / 3);
-                    });
+                    var coba = new Date(res['date']).toLocaleString();
+                    var coba2 = new Date(res['date']);
+                    var total = res['total'];
+                    var x = {};
+                    var y = {};
+                    var jumlah = {
+                        x: coba2,
+                        y: total
+                    };
+                    aku.push(coba);
+                    hello.push(jumlah);
+                    // var month = Math.floor((coba2.getMonth() + 3) / 3);
+                });
 
                 var apasih = {};
-                var westah = {aku,eka};
+                var westah = {
+                    aku,
+                    eka
+                };
                 console.log(westah);
                 var ctx = document.getElementById("chartexpense").getContext("2d");
                 config = {
                     type: 'line',
                     data: {
-                        labels:  westah,
+                        labels: westah,
                         datasets: [{
                             label: 'week',
                             data: hello,
-                            backgroundColor:
-                                'rgba(255, 99, 132, 0.2)',
-                            borderColor:
-                                'rgba(255, 99, 132, 1)',
+                            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                            borderColor: 'rgba(255, 99, 132, 1)',
                             borderWidth: 1
-                        },{
+                        }, {
                             label: 'week',
                             data: rinda,
-                            backgroundColor:
-                                'rgba(14, 103, 47, 0.2)',
-                            borderColor:
-                                'rgba(14, 103, 47, 1)',
+                            backgroundColor: 'rgba(14, 103, 47, 0.2)',
+                            borderColor: 'rgba(14, 103, 47, 1)',
                             borderWidth: 1
                         }]
 
@@ -402,33 +426,29 @@
         }
     });
 
-    function updatechartexpense()
-    {
-     chartku.data.datasets[0].label = 'month';
-     chartku.options.scales.xAxes[0].time = {
-         unit: 'month'
-     };
-     chartku.update();
+    function updatechartexpense() {
+        chartku.data.datasets[0].label = 'month';
+        chartku.options.scales.xAxes[0].time = {
+            unit: 'month'
+        };
+        chartku.update();
     }
 
-    function updatechartweekexpense()
-    {
+    function updatechartweekexpense() {
         chartku.data.datasets[0].label = 'week';
         chartku.options.scales.xAxes[0].time = {
-         unit: 'week'
+            unit: 'week'
         };
         chartku.update();
     }
 
-    function updatechartdayexpense()
-    {
+    function updatechartdayexpense() {
         chartku.data.datasets[0].label = 'day';
         chartku.options.scales.xAxes[0].time = {
-         unit: 'day'
+            unit: 'day'
         };
         chartku.update();
     }
-
 </script>
 
 @endpush

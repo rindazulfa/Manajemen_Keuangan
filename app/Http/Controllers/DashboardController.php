@@ -17,12 +17,51 @@ class DashboardController extends Controller
      */
     public function index()
     {
+        // 
         $incomes = DB::table('incomes')->select('total')->sum('total');
         $expenses = DB::table('expenses')->select('total')->sum('total');
         $data['incomes'] = $incomes;
+        // $data['incomes'] = $incomes1;
         $data['expenses'] = $expenses;
-
+        // $data['expenses'] = $expenses1;
         $income = Income::select('total')->get();
+
+
+
+
+        // Nashir
+        $incomes_all = DB::table('incomes')->get();
+        $expenses_all = DB::table('expenses')->get();
+
+        $arr = [];
+        
+        for ($i=0; $i < count($incomes_all); $i++) { 
+            $category = DB::table('income_categories')->where('id',"=", $incomes_all[$i]->income_categories_id)->pluck('name')->first();
+            $x['category'] = $category;
+            $x['date'] = $incomes_all[$i]->date;    
+            $x['name'] = $incomes_all[$i]->name;
+            $x['total'] = $incomes_all[$i]->total;
+            $x['type'] = 'Income';
+
+            array_push($arr, $x);
+        }
+        
+        for ($i=0; $i < count($expenses_all); $i++) { 
+            $category = DB::table('expense_categories')->where('id',"=", $expenses_all[$i]->expense_categories_id)->pluck('name')->first();
+            $x['category'] = $category;
+            $x['date'] = $expenses_all[$i]->date;
+            $x['name'] = $expenses_all[$i]->name;
+            $x['total'] = $expenses_all[$i]->total;
+            $x['type'] = 'Expense';
+
+            array_push($arr, $x);
+        }
+
+        $data['transaction'] = $arr;
+        
+
+
+
         $a = [];
         foreach($income as $incomes){
             $a[] = $incomes->total;
