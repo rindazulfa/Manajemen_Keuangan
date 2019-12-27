@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\IncomeCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -14,7 +15,12 @@ class IncomeController extends Controller
      */
     public function index()
     {
-        $incomes = DB::table('incomes')->get();
+        //Tanggal,Nama, Total,Pemberi, Kategori, Metode
+        $incomes = DB::table('incomes')
+        ->select('incomes.id','incomes.date','incomes.name','incomes.total','incomes.from','income_categories.name as category','methods.name as method')
+        ->join('income_categories','incomes.income_categories_id','=','income_categories.id')
+        ->join('methods','incomes.methods_id','=','methods.id')
+        ->get();
         $data['incomes'] = $incomes;
         return view('pemasukan.index', $data);
     }

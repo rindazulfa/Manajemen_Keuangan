@@ -51,8 +51,8 @@
                                 <td>{{$key->name}}</td>
                                 <td>{{$key->total}}</td>
                                 <td>{{$key->from}}</td>
-                                <td>{{$key->income_categories_id}}</td>
-                                <td>{{$key->methods_id}}</td>
+                                <td>{{$key->category}}</td>
+                                <td>{{$key->method}}</td>
                             </tr>
                             @endforeach
                         </tbody>
