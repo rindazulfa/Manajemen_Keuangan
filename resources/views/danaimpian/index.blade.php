@@ -64,4 +64,107 @@
         </div>
     </div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <form action="">
+            <table class="profit-loss report-table table" id="date-profit-lost">
+                <thead class="report-header">
+                    <tr>
+                        <th colspan="2">
+                    Rencana Mendatang
+                        </th>
+                    <th></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                              <td class="report-subtotal text-left regular-text data-col-half" colspan="2">
+                                  Nama Rencana
+                                </td>
+                                <td class="report-subtotal text-right" id="assets-type-1-total-data">
+                                </td>
+                                <td class="border-top-thin" id="hasilnama" name="hasilnama" style="padding-left:80px;">
+
+                                </td>
+                         </tr>
+                           <tr>
+                                <td class="report-subtotal text-left regular-text data-col-half" colspan="2">
+                                    Biaya saat ini
+                                  </td>
+                                  <td class="report-subtotal text-right" id="assets-type-1-total-data">
+                                  </td>
+                                  <td class="border-top-thin" id="hasilbiaya" style="padding-left:80px;">
+
+                                  </td>
+                           </tr>
+                           <tr>
+                                <td class="report-subtotal text-left regular-text data-col-half" colspan="2">
+                                    Tercapai Dalam
+                                  </td>
+                                  <td class="report-subtotal text-right" id="assets-type-1-total-data">
+                                  </td>
+                                  <td class="border-top-thin" id="hasiltercapai" style="padding-left:80px;">
+
+                                  </td>
+                           </tr>
+
+                           <tr>
+                                <td class="report-subtotal text-left regular-text data-col-half" colspan="2">
+                                   Inflasi
+                                  </td>
+                                  <td class="report-subtotal text-right" id="assets-type-1-total-data">
+                                  </td>
+                                  <td class="border-top-thin" id="hasilinflasi" style="padding-left:80px;">
+
+                                  </td>
+                           </tr>
+                           <tr>
+                                <td class="report-subtotal text-left regular-text data-col-half" colspan="2">
+                               Biaya yang akan datang
+                                </td>
+                                  <td class="report-subtotal text-right" id="assets-type-1-total-data">
+                                  </td>
+                                  <td class="border-top-thin" id="hasildatang" style="padding-left:80px;">
+
+                                  </td>
+                           </tr>
+                           <tr>
+                                <td class="report-subtotal text-left regular-text data-col-half" colspan="2">
+                                  Perkiraan perbulan
+                                  </td>
+                                  <td class="report-subtotal text-right" id="assets-type-1-total-data">
+                                  </td>
+                                  <td class="border-top-thin" id="perbulan" style="padding-left:80px;">
+
+                                  </td>
+                           </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Simpan</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
 @endsection
+
+@push('script')
+<script>
+$(document).ready(function(){
+    $('#hitung').on('click', function(){
+        $('#exampleModal').modal('show');
+    });
+});
+</script>
+
+@endpush
