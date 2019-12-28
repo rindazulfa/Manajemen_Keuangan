@@ -150,7 +150,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Simpan</button>
+          <button type="button" class="btn btn-primary" id="simpanlife">Simpan</button>
         </form>
         </div>
       </div>
@@ -232,6 +232,20 @@ $(document).ready(function(){
                     }
                 });
        }
+
+         $('#simpanlife').on('click', function() {
+
+                ajax();
+                $.ajax({
+                    url: '/danaimpian/save',
+                    method: 'POST',
+                    data: hasil,
+                    success:function(data){
+                        $('#exampleModal').modal('hide');
+                        swal("Success", "LifePlan Berhasil di Simpan", "success");
+                    }
+                });
+       });
 });
 </script>
 

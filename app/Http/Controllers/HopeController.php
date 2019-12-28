@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use App\CustomClass\hitung;
+use App\Hope;
 
 class HopeController extends Controller
 {
@@ -126,5 +127,18 @@ class HopeController extends Controller
 
 
         }
+    }
+
+
+    public function savedata(Request $request)
+    {
+        $plan = new Hope;
+        $plan->name = $request->get('nama');
+        $plan->cost = $request->get('biaya');
+        $plan->month = $request->get('bulan');
+        $plan->inflation = $request->get('inflasi');
+        $plan->per_month = $request->get('perbulan');
+        $plan->upcoming_costs = $request->get('biayadatang');
+        $plan->save();
     }
 }
