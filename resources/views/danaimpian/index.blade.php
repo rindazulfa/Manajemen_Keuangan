@@ -242,7 +242,7 @@ $(document).ready(function(){
                     data: hasil,
                     success:function(data){
                         $('#exampleModal').modal('hide');
-                        swal("Success", "LifePlan Berhasil di Simpan", "success");
+                        swal("Success", "Rencana mendatang Berhasil di Simpan", "success");
                     }
                 });
        });
