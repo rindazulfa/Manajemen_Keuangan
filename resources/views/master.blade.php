@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="{{asset('vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('vendor/charts/c3charts/c3.css')}}">
     <link rel="stylesheet" href="{{asset('vendor/fonts/flag-icon-css/flag-icon.min.css')}}">
-    <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
+   
+    <title>Bumblebee - Manajemen Keuangan</title>
 </head>
 
 <body>
@@ -160,6 +161,9 @@
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="/pengeluaran"><i class="fas fa-shopping-cart"></i>Pengeluaran <span class="badge badge-success">6</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/danaimpian"><i class="fas fa-shopping-cart"></i>Dana Impian <span class="badge badge-success">6</span></a>
                             </li>
 
                         </ul>

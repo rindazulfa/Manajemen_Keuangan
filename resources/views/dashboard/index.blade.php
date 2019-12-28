@@ -161,7 +161,7 @@
                     <tbody>
                         @foreach($transaction as $key)
                         <tr>
-                            <td>1</td>
+                            <th scope="row">{{ $loop->iteration }}</th>
                             <td>{{ $key['date'] }}</td>
                             <td>{{ $key['name'] }}</td>
                             <td>{{ $key['category'] }}</td>
@@ -173,23 +173,7 @@
                             @endif
                         </tr>
 
-                        <!-- <tr>
-                            <td>1</td>
-                            <td>Bisnis </td>
-                            <td>2019-12-19</td>
-                            <td>2</td>
-                            <td>$80.00</td>
-                            <td><span class="badge-dot badge-brand mr-1"></span>InTransit </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Bisnis </td>
-                            <td>2019-12-19</td>
-                            <td>2</td>
-                            <td>$80.00</td>
-                            <td><span class="badge-dot badge-success mr-1"></span>Delivered </td>
-                        </tr> -->
-                    @endforeach
+                        @endforeach
                     </tbody>
                 </table>
             </div>

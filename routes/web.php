@@ -23,3 +23,4 @@ Route::get('/dashboard/chart-expense', 'DashboardController@chartExpense');
 Route::resource('dashboard', 'DashboardController');
 Route::resource('pemasukan', 'IncomeController');
 Route::resource('pengeluaran', 'ExpenseController');
+Route::resource('danaimpian', 'HopeController');
