@@ -15,15 +15,15 @@
                             <div class="row">
                                 <!-- Nama Rencana -->
                                 <div class="form-group col-sm-6 col-xl-6 col-lg-6 col-md-6 col-6">
-                                    <label for="inputUserName">Nama Rencana</label>
-                                    <input id="inputUserName" type="text" name="name" data-parsley-trigger="change" required="" placeholder="Masukkan Rencanamu" autocomplete="off" class="form-control">
+                                    <label for="namalifeplan">Nama Rencana</label>
+                                    <input id="namalifeplan" type="text" name="name" data-parsley-trigger="change" required="" placeholder="Masukkan Rencanamu" autocomplete="off" class="form-control">
                                 </div>
 
                                   <!-- Target Rencana-->
                                   <div class="form-group col-sm-6 col-xl-6 col-lg-6 col-md-6 col-6">
                                     <label for="inputUserName">Target Rencana</label>
                                         <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                                            <input type="month" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
+                                            <input type="month" id="month" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
                                             <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
                                             </div>
@@ -33,20 +33,20 @@
                             <div class="row">
                                 <!-- Biaya -->
                                 <div class="form-group col-sm-6 col-xl-6 col-lg-6 col-md-6 col-6">
-                                    <label for="inputEmail">Biaya</label>
-                                    <input id="inputEmail" type="text" name="email" data-parsley-trigger="change" required="" placeholder="Masukkan Biaya yang dibutuhkan" autocomplete="off" class="form-control">
+                                    <label for="biaya">Biaya</label>
+                                    <input id="biaya" type="text" name="email" data-parsley-trigger="change" required="" placeholder="Masukkan Biaya yang dibutuhkan" autocomplete="off" class="form-control">
                                 </div>
                                 <!-- Kenaikan Harga -->
                                 <div class="form-group col-sm-6 col-xl-6 col-lg-6 col-md-6 col-6">
-                                    <label for="inputPassword">Tercapai Dalam</label>
-                                    <input id="inputPassword" type="text"  required="" disabled class="form-control">
+                                    <label for="tercapai">Tercapai Dalam</label>
+                                    <input id="tercapai" type="text"  disabled class="form-control">
                                 </div>
                             </div>
                             <div class="row">
                                 <!-- Keterangan -->
                                 <div class="form-group col-sm-6 col-xl-6 col-lg-6 col-md-6 col-6">
-                                    <label for="inputRepeatPassword">Inflasi</label>
-                                    <input id="inputRepeatPassword" disabled data-parsley-equalto="#inputPassword" type="text" required="" value="6%"  class="form-control">
+                                    <label for="inflasi">Inflasi</label>
+                                    <input id="inflasi" disabled data-parsley-equalto="#inputPassword" type="text"  value="6%"  class="form-control">
                                 </div>
 
                             </div>
@@ -159,11 +159,77 @@
 @endsection
 
 @push('script')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
 $(document).ready(function(){
+    var data;
+    var hasil;
+    var bulan;
     $('#hitung').on('click', function(){
-        $('#exampleModal').modal('show');
-    });
+                var month = $('#month').val();
+                var biaya = $('#biaya').val();
+                var nama = $('#namalifeplan').val();
+                if(nama == ''){
+                    swal("Gagal", "Isi form nama", "error");
+                }else if(month == ''){
+                    swal("Gagal", "Pilih bulan dan tahun", "error");
+                }else  if(biaya == ''){
+                    swal("Gagal", "Isi form biaya", "error");
+                }
+                else{
+                    ajax();
+                $.ajax({
+                    url: '/dashboard/lifeplan/hitung',
+                    method: 'POST',
+                    data: {
+                        'hitung':1,
+                        'nama':nama,
+                        'biaya':biaya,
+                        'bulan':bulan,
+                    },
+                    success:function(data){
+                        hasil = data;
+                        $('#exampleModal').modal('show');
+                        $('#hasilnama').text(data['nama']);
+                        $('#hasilbiaya').text(data['biaya']);
+                        $('#hasiltercapai').text(data['bulan']+' bulan');
+                        $('#hasilinflasi').text(data['inflasi']);
+                        $('#hasildatang').text(data['biayadatang']);
+                        $('#perbulan').text(data['perbulan']);
+
+
+                    }
+                });
+                }
+
+       });
+
+    $('#month').on('change', function(){
+            data = $(this).val();
+                ajax();
+                $.ajax({
+                    url: '/danaimpian/fetch',
+                    method: 'POST',
+                    data:{'date': 1,
+                        'data':data
+                    },
+                    success:function(response){
+                        bulan = response;
+                       $('#tercapai').val(response+' bulan');
+                    }
+                });
+       });
+
+
+       function ajax()
+       {
+        $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+       }
 });
 </script>
 

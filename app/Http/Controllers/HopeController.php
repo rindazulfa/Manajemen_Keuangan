@@ -24,7 +24,7 @@ class HopeController extends Controller
      */
     public function create()
     {
-      
+
     }
 
     /**
@@ -81,5 +81,20 @@ class HopeController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function fetch(Request $request)
+    {
+        if($request->get('date')){
+          $date = $request->get('data');
+          $date = strtotime($date);
+          $year1 = date('Y',$date);
+          $year2 = date('Y');
+          $month1 = date('m',$date);
+          $month2 = date('m');
+          $diff = (($year1 - $year2) * 12) + ($month1 - $month2);
+          echo $diff;
+
+        }
     }
 }
