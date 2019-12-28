@@ -180,7 +180,7 @@ $(document).ready(function(){
                 else{
                     ajax();
                 $.ajax({
-                    url: '/dashboard/lifeplan/hitung',
+                    url: '/danaimpian/hitung',
                     method: 'POST',
                     data: {
                         'hitung':1,
@@ -197,6 +197,7 @@ $(document).ready(function(){
                         $('#hasilinflasi').text(data['inflasi']);
                         $('#hasildatang').text(data['biayadatang']);
                         $('#perbulan').text(data['perbulan']);
+                        $('#basicform')[0].reset();
 
 
                     }
@@ -221,6 +222,7 @@ $(document).ready(function(){
                 });
        });
 
+       $( '#biaya' ).mask('000.000.000', {reverse: true});
 
        function ajax()
        {

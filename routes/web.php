@@ -21,6 +21,7 @@ Route::get('/', function () {
 Route::get('/dashboard/chart-income', 'DashboardController@chartIncome');
 Route::get('/dashboard/chart-expense', 'DashboardController@chartExpense');
 Route::post('/danaimpian/fetch','HopeController@fetch');
+Route::post('/danaimpian/hitung','HopeController@hitung');
 Route::resource('dashboard', 'DashboardController');
 Route::resource('pemasukan', 'IncomeController');
 Route::resource('pengeluaran', 'ExpenseController');

@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
+use App\CustomClass\hitung;
 
 class HopeController extends Controller
 {
@@ -94,6 +96,34 @@ class HopeController extends Controller
           $month2 = date('m');
           $diff = (($year1 - $year2) * 12) + ($month1 - $month2);
           echo $diff;
+
+        }
+    }
+
+    public function hitung(Request $request)
+    {
+        if($request->get('hitung')){
+            $bulan = $request->get('bulan');
+            $bulan = $bulan/12;
+            $biaya = str_replace('.','',$request->get('biaya'));
+            $hitung = new hitung;
+            $hitungdatang = $hitung->futureku($bulan,$biaya,'future');
+            $hitung = $hitungdatang/$request->get('bulan');
+            $hitung = round($hitung);
+            $hitung = intval($hitung);
+            $rupiah = "Rp ".number_format($hitung,2,',','.');
+            $biaya = "Rp ".number_format($biaya,2,',','.');
+            $datang = round($hitungdatang);
+            $datang = "Rp ".number_format($datang,2,',','.');
+            $hasil =   array('bulan' => $request->get('bulan'),
+                            'biaya' => $biaya,
+                            'inflasi' => '6%',
+                            'perbulan' => $rupiah,
+                            'nama' => $request->get('nama'),
+                            'biayadatang' => $datang
+                     );
+            return $hasil;
+
 
         }
     }
