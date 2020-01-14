@@ -146,6 +146,7 @@
             <div class="menu-list">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                    
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -157,14 +158,37 @@
                             <li class="nav-item ">
                                 <a class="nav-link" href="/dashboard"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="/pemasukan"><i class="far fa-money-bill-alt"></i>Pemasukan <span class="badge badge-success">6</span></a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pemasukan" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="far fa-money-bill-alt"></i>Pemasukan</a>
+                                <div id="submenu-5" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pemasukan/create">Form</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pemasukan">List Pemasukan</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
+                            <!-- <li class="nav-item ">
+                                <a class="nav-link" href="/pemasukan"><i class="far fa-money-bill-alt"></i>Pemasukan <span class="badge badge-success">6</span></a>
+                                <div id="submenu-1-1" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../dashboard-influencer.html">Tambah Pemasukan</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../influencer-finder.html">List Pemasukan</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li> -->
                             <li class="nav-item ">
                                 <a class="nav-link" href="/pengeluaran"><i class="fas fa-shopping-cart"></i>Pengeluaran <span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="/danaimpian"><i class="fas fa-shopping-cart"></i>Dana Impian <span class="badge badge-success">6</span></a>
+                                <a class="nav-link" href="/danaimpian"><i class=" fas fa-paper-plane"></i>Dana Impian <span class="badge badge-success">6</span></a>
                             </li>
 
                         </ul>

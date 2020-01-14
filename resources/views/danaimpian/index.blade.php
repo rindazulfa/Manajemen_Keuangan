@@ -24,9 +24,9 @@
                                     <label for="inputUserName">Target Rencana</label>
                                         <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
                                             <input type="month" id="month" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
-                                            <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                            <!-- <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                             </div>
