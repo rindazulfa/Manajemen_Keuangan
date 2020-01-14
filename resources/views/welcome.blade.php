@@ -117,7 +117,7 @@
                             <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Bumblebee</h3>
                             <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Aplikasi akutansi gratis</h2>
                             <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Yuk, Buruan Gabung!! Atur Keuangan Pribadimu & Capai Target Impianmu!!</p>
-                            <a href="https://rebrand.ly/basic-ud" rel="nofollow" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Memulai</a>
+                            <a href="/dashboard" rel="nofollow" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Memulai</a>
                         </div> <!-- header hero content -->
                     </div>
                 </div> <!-- row -->
