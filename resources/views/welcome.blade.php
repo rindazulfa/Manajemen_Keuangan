@@ -3,42 +3,42 @@
 
 <head>
     <meta charset="utf-8">
-    
+
     <!--====== Title ======-->
     <title>Bumblebee</title>
-    
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="{{asset('assets/images/favicon.png')}}" type="image/png">
-        
+
     <!--====== Animate CSS ======-->
     <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}">
-        
+
     <!--====== Line Icons CSS ======-->
     <link rel="stylesheet" href="{{asset('assets/css/LineIcons.css')}}">
-        
+
     <!--====== Font Awesome CSS ======-->
     <link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
-        
+
     <!--====== Bootstrap CSS ======-->
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
-    
+
     <!--====== Default CSS ======-->
     <link rel="stylesheet" href="{{asset('assets/css/default.css')}}">
-    
+
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
-    
+
 </head>
 
 <body>
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->    
-   
-   
+  <![endif]-->
+
+
     <!--====== PRELOADER PART START ======-->
 
     <div class="preloader">
@@ -59,9 +59,9 @@
     </div>
 
     <!--====== PRELOADER PART ENDS ======-->
-    
+
     <!--====== HEADER PART START ======-->
-    
+
     <header class="header-area">
         <div class="navbar-area">
             <div class="container">
@@ -89,9 +89,6 @@
                                         <a class="page-scroll" href="#about">Konsep Dasar</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#facts">Perhitungan</a>
-                                    </li>
-                                    <li class="nav-item">
                                         <a class="page-scroll" href="#team">Team</a>
                                     </li>
                                     <li class="nav-item">
@@ -99,7 +96,7 @@
                                     </li>
                                 </ul>
                             </div> <!-- navbar collapse -->
-                            
+
                             <div class="navbar-btn d-none d-sm-inline-block">
                                 <a class="main-btn" data-scroll-nav="0" href="#pricing">Free Trial</a>
                             </div>
@@ -108,7 +105,7 @@
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- navbar area -->
-        
+
         <div id="home" class="header-hero bg_cover" style="background-image: url(assets/images/banner-bg.svg)">
             <div class="container">
                 <div class="row justify-content-center">
@@ -132,22 +129,24 @@
             <div id="particles-1" class="particles"></div>
         </div> <!-- header hero -->
     </header>
-    
+
     <!--====== HEADER PART ENDS ======-->
-    
-    <!--====== SERVICES PART START ======-->
-    
+
+    <!--====== TUJUAN PART START ======-->
+    <!-- section title -->
     <section id="features" class="services-area pt-120">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="section-title text-center pb-40">
                         <div class="line m-auto"></div>
-                        <h3 class="title">Clean and simple design, <span> Comes with everything you need to get started!</span></h3>
-                    </div> <!-- section title -->
+                        <h3 class="title">Jadi Tujuan, <span> membuat website ini adalah</span></h3>
+                    </div>
                 </div>
-            </div> <!-- row -->
+            </div>
+            <!-- row -->
             <div class="row justify-content-center">
+                <!-- single services -->
                 <div class="col-lg-4 col-md-7 col-sm-8">
                     <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                         <div class="services-icon">
@@ -162,6 +161,7 @@
                         </div>
                     </div> <!-- single services -->
                 </div>
+                <!-- single services -->
                 <div class="col-lg-4 col-md-7 col-sm-8">
                     <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="services-icon">
@@ -174,8 +174,9 @@
                             <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
                             <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
                         </div>
-                    </div> <!-- single services -->
+                    </div>
                 </div>
+                <!-- single services -->
                 <div class="col-lg-4 col-md-7 col-sm-8">
                     <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
                         <div class="services-icon">
@@ -188,16 +189,17 @@
                             <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
                             <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
                         </div>
-                    </div> <!-- single services -->
+                    </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+
+            </div> 
+        </div> 
     </section>
-    
-    <!--====== SERVICES PART ENDS ======-->
-    
-    <!--====== ABOUT PART START ======-->
-    
+
+    <!--====== TUJUAN PART ENDS ======-->
+
+    <!--====== KONSEP DASAR PART START ======-->
+
     <section id="about" class="about-area pt-70">
         <div class="container">
             <div class="row">
@@ -205,7 +207,7 @@
                     <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="section-title">
                             <div class="line"></div>
-                            <h3 class="title">Quick & Easy <span>to Use Bootstrap Template</span></h3>
+                            <h3 class="title">Konsep  <span>Dasar</span></h3>
                         </div> <!-- section title -->
                         <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
                         <a href="#" class="main-btn">Try it Free</a>
@@ -222,11 +224,11 @@
             <img src="assets/images/about-shape-1.svg" alt="shape">
         </div>
     </section>
-    
-    <!--====== ABOUT PART ENDS ======-->
-    
+
+    <!--====== KONSEP DASAR PART ENDS ======-->
+
     <!--====== ABOUT PART START ======-->
-    
+
     <section class="about-area pt-70">
         <div class="about-shape-2">
             <img src="assets/images/about-shape-2.svg" alt="shape">
@@ -254,7 +256,7 @@
 
 
     <!--====== ABOUT PART START ======-->
-    
+
     <section class="about-area pt-70">
         <div class="container">
             <div class="row">
@@ -279,15 +281,137 @@
             <img src="assets/images/about-shape-1.svg" alt="shape">
         </div>
     </section>
-    
+
     <!--====== ABOUT PART ENDS ======-->
 
-    
-    <!--====== ABOUT PART ENDS ======-->
-    
-    
+    <!--====== START TEAM ======-->
+    <section id="team" class="services-area pt-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- section title -->
+                    <div class="section-title text-center pb-40">
+                        <div class="line m-auto"></div>
+                        <h3 class="title">Haloo guys;)) <span> Yuk kepoin website kita!!</span></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row justify-content-center">
+                <!-- Bela Tertiana -->
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+
+                        <div class="thumb d-flex justify-content-sm-center">
+                            <figure>
+                                <img class="img-fluid" src="assets/images/terti.jpeg" alt="" />
+                            </figure>
+                        </div>
+                        <div class="meta-text text-sm-center">
+                            <h4>Bela Tertiana</h4>
+                            <p class="designation">18410</p>
+                            <div class="align-items-center justify-content-center d-flex">
+                                <a href="https://www.instagram.com/gamawskt/" target="_blank"><i class=""></i></a>
+                                <a href="" target="_blank"><i class="ti-linkedin"></i></a>
+                                <a href="" target="_blank"><i class="ti-github"></i></a>
+                                <a href="" target="_blank"><i class="ti-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nada Navis -->
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+
+                        <div class="thumb d-flex justify-content-sm-center">
+                            <figure>
+                                <img class="img-fluid" src="assets/images/nada.jpeg" alt="" />
+                            </figure>
+                        </div>
+                        <div class="meta-text text-sm-center">
+                            <h4>Nada Navis</h4>
+                            <p class="designation">18410100124</p>
+                            <div class="align-items-center justify-content-center d-flex">
+                                <a href="https://www.instagram.com/gamawskt/" target="_blank"><i class=""></i></a>
+                                <a href="" target="_blank"><i class="ti-linkedin"></i></a>
+                                <a href="" target="_blank"><i class="ti-github"></i></a>
+                                <a href="" target="_blank"><i class="ti-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Putu Ayu -->
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+
+                        <div class="thumb d-flex justify-content-sm-center">
+                            <figure>
+                                <img class="img-fluid" src="assets/images/amel.jpeg" alt="" />
+                            </figure>
+                        </div>
+                        <div class="meta-text text-sm-center">
+                            <h4>Putu Ayu Amalia</h4>
+                            <p class="designation">18410100128</p>
+                            <div class="align-items-center justify-content-center d-flex">
+                                <a href="https://www.instagram.com/gamawskt/" target="_blank"><i class=""></i></a>
+                                <a href="" target="_blank"><i class="ti-linkedin"></i></a>
+                                <a href="" target="_blank"><i class="ti-github"></i></a>
+                                <a href="" target="_blank"><i class="ti-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rinda -->
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+
+                        <div class="thumb d-flex justify-content-sm-center">
+                            <figure>
+                                <img class="img-fluid" src="assets/images/rinda.jpeg" alt="" />
+                            </figure>
+                        </div>
+                        <div class="meta-text text-sm-center">
+                            <h4>Eka Hirinda Zulfa</h4>
+                            <p class="designation">18410100132</p>
+                            <div class="align-items-center justify-content-center d-flex">
+                                <a href="https://www.instagram.com/gamawskt/" target="_blank"><i class=""></i></a>
+                                <a href="" target="_blank"><i class="ti-linkedin"></i></a>
+                                <a href="" target="_blank"><i class="ti-github"></i></a>
+                                <a href="" target="_blank"><i class="ti-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ayub R -->
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+
+                        <div class="thumb d-flex justify-content-sm-center">
+                            <figure>
+                                <img class="img-fluid" src="assets/images/ayub.jpg" alt="" />
+                            </figure>
+                        </div>
+                        <div class="meta-text text-sm-center">
+                            <h4>Ayub</h4>
+                            <p class="designation">18410</p>
+                            <div class="align-items-center justify-content-center d-flex">
+                                <a href="https://www.instagram.com/gamawskt/" target="_blank"><i class=""></i></a>
+                                <a href="" target="_blank"><i class="ti-linkedin"></i></a>
+                                <a href="" target="_blank"><i class="ti-github"></i></a>
+                                <a href="" target="_blank"><i class="ti-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--================ END TEAM =================-->
+
     <!--====== FOOTER PART START ======-->
-    
+
     <footer id="footer" class="footer-area pt-120">
         <div class="container">
             <div class="subscribe-area wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -305,7 +429,7 @@
                             </form>
                         </div>
                     </div>
-                 </div> <!-- row -->
+                </div> <!-- row -->
             </div> <!-- subscribe area -->
             <div class="footer-widget pb-100">
                 <div class="row">
@@ -380,18 +504,18 @@
         </div> <!-- container -->
         <div id="particles-2"></div>
     </footer>
-    
+
     <!--====== FOOTER PART ENDS ======-->
-    
+
     <!--====== BACK TOP TOP PART START ======-->
 
     <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
 
-    <!--====== BACK TOP TOP PART ENDS ======-->   
-    
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
     <!--====== PART START ======-->
-    
-<!--
+
+    <!--
     <section class="">
         <div class="container">
             <div class="row">
@@ -400,7 +524,7 @@
         </div>
     </section>
 -->
-    
+
     <!--====== PART ENDS ======-->
 
 
@@ -409,28 +533,28 @@
     <!--====== Jquery js ======-->
     <script src="{{asset('assets/js/vendor/jquery-1.12.4.min.js')}}"></script>
     <script src="{{asset('assets/js/vendor/modernizr-3.7.1.min.js')}}"></script>
-    
+
     <!--====== Bootstrap js ======-->
     <script src="{{asset('assets/js/popper.min.js')}}"></script>
     <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
-    
+
     <!--====== Plugins js ======-->
     <script src="{{asset('assets/js/plugins.js')}}"></script>
-    
-    
+
+
     <!--====== Scrolling Nav js ======-->
     <script src="{{asset('assets/js/jquery.easing.min.js')}}"></script>
     <script src="{{asset('assets/js/scrolling-nav.js')}}"></script>
-    
+
     <!--====== wow js ======-->
     <script src="{{asset('assets/js/wow.min.js')}}"></script>
-    
+
     <!--====== Particles js ======-->
     <script src="{{asset('assets/js/particles.min.js')}}"></script>
-    
+
     <!--====== Main js ======-->
     <script src="{{asset('assets/js/main.js')}}"></script>
-    
+
 </body>
 
 </html>

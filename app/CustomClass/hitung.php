@@ -15,13 +15,13 @@ class hitung
         {
 
             case 'fv':
-            $data =  pow(1.06,$this->a);
+            $data =  pow(1.03,$this->a);
             $bagi = $this->b /$data;
             return $bagi / $this->d;
             break;
 
             case 'future':
-            $future = pow(1.06,$this->a);
+            $future = pow(1.03,$this->a);
             $kali = $this->b*$future;
             return $kali;
             break;

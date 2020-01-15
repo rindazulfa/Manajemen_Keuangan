@@ -118,7 +118,7 @@ class HopeController extends Controller
             $datang = "Rp ".number_format($datang,2,',','.');
             $hasil =   array('bulan' => $request->get('bulan'),
                             'biaya' => $biaya,
-                            'inflasi' => '6%',
+                            'inflasi' => '3%',
                             'perbulan' => $rupiah,
                             'nama' => $request->get('nama'),
                             'biayadatang' => $datang
