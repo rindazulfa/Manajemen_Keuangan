@@ -31,9 +31,9 @@
         <div class="card">
             <h5 class="card-header">Data Pemasukan</h5>
             <div class="card-body">
-                <a href="/pemasukan/create" class="btn btn-primary">Tambah Pemasukan</a>
+                <!-- <a href="/pemasukan/create" class="btn btn-primary">Tambah Pemasukan</a> -->
 
-                <div class="table-responsive mt-5">
+                <div class="table-responsive m">
                     <table class="table table-striped table-bordered first">
                         <thead>
                             <tr>

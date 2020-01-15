@@ -30,9 +30,9 @@
         <div class="card">
             <h5 class="card-header">Data Pengeluaran</h5>
             <div class="card-body">
-                <a href="/pengeluaran/create" class="btn btn-primary">Tambah Pengeluaran</a>
+                <!-- <a href="/pengeluaran/create" class="btn btn-primary">Tambah Pengeluaran</a> -->
 
-                <div class="table-responsive mt-5">
+                <div class="table-responsive ">
                     <table class="table table-striped table-bordered first">
                         <thead>
                             <tr>

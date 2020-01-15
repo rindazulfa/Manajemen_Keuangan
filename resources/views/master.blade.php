@@ -87,24 +87,31 @@
                                     </ul>
                                 </div>
                             </li>
-                            <!-- <li class="nav-item ">
-                                <a class="nav-link" href="/pemasukan"><i class="far fa-money-bill-alt"></i>Pemasukan <span class="badge badge-success">6</span></a>
-                                <div id="submenu-1-1" class="collapse submenu" style="">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/pengeluaran" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-6"><i class="fas fa-shopping-cart"></i>Pengeluaran</a>
+                                <div id="submenu-6" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="../dashboard-influencer.html">Tambah Pemasukan</a>
+                                            <a class="nav-link" href="/pengeluaran/create">Form</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="../influencer-finder.html">List Pemasukan</a>
+                                            <a class="nav-link" href="/pengeluaran">List Pengeluaran</a>
                                         </li>
                                     </ul>
                                 </div>
-                            </li> -->
-                            <li class="nav-item ">
-                                <a class="nav-link" href="/pengeluaran"><i class="fas fa-shopping-cart"></i>Pengeluaran <span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="/danaimpian"><i class=" fas fa-paper-plane"></i>Dana Impian <span class="badge badge-success">6</span></a>
+                                <a class="nav-link" href="/danaimpian" data-toggle="collapse" aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-7"><i class="fas fa-paper-plane"></i>Dana Impian</a>
+                                <div id="submenu-7" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/danaimpian/create">Form</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/danaimpian">List Dana Impian</a>
+                                        </li>
+                                    </ul>
+                                </div> 
                             </li>
 
                         </ul>

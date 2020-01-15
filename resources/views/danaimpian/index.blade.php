@@ -46,7 +46,7 @@
                                 <!-- Keterangan -->
                                 <div class="form-group col-sm-6 col-xl-6 col-lg-6 col-md-6 col-6">
                                     <label for="inflasi">Inflasi</label>
-                                    <input id="inflasi" disabled data-parsley-equalto="#inputPassword" type="text"  value="6%"  class="form-control">
+                                    <input id="inflasi" disabled data-parsley-equalto="#inputPassword" type="text"  value="3%"  class="form-control">
                                 </div>
 
                             </div>
