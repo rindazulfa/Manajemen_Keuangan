@@ -27,7 +27,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboard/chart-expense', 'DashboardController@chartExpense');
     Route::post('/danaimpian/fetch','HopeController@fetch');
     Route::post('/danaimpian/hitung','HopeController@hitung');
-    Route::post('/danaimpian/save','HopeController@savedata');
+    Route::post('/danaimpian/save','HopeController@store');
     Route::resource('dashboard', 'DashboardController');
     Route::resource('pemasukan', 'IncomeController');
     Route::resource('pengeluaran', 'ExpenseController');

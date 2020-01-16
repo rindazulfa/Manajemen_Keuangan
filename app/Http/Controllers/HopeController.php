@@ -17,7 +17,13 @@ class HopeController extends Controller
      */
     public function index()
     {
-        return view('danaimpian.index');
+        // id, name,cost,month,inflation,per_month, upcoming_costs
+        $hopes = DB::table('hopes')
+        ->select('hopes.id','hopes.name','hopes.cost','hopes.month','hopes.inflation','hopes.per_month','hopes.upcoming_costs')
+        ->get();
+        $data['hopes'] = $hopes;
+        return view('danaimpian.index', $data);
+        // return view('danaimpian.index');
     }
 
     /**
@@ -27,6 +33,8 @@ class HopeController extends Controller
      */
     public function create()
     {
+        $data = DB::table('hopes')->get();
+        return view('danaimpian.create', $data);
 
     }
 
@@ -38,6 +46,16 @@ class HopeController extends Controller
      */
     public function store(Request $request)
     {
+        //id, name,cost,month,inflation,per_month, upcoming_costs
+        DB::table('hopes')->insert([
+            'name' => $request->get('nama'),
+            'cost' => $request->get('biaya'),
+            'month' => $request->get('bulan'),
+            'inflation' => $request->get('inflasi'),
+            'per_month' => $request->get('perbulan'),
+            'upcoming_costs' => $request->get('biayadatang')
+        ]);
+
         return redirect('/danaimpian');
     }
 
@@ -132,13 +150,13 @@ class HopeController extends Controller
 
     public function savedata(Request $request)
     {
-        $plan = new Hope;
-        $plan->name = $request->get('nama');
-        $plan->cost = $request->get('biaya');
-        $plan->month = $request->get('bulan');
-        $plan->inflation = $request->get('inflasi');
-        $plan->per_month = $request->get('perbulan');
-        $plan->upcoming_costs = $request->get('biayadatang');
-        $plan->save();
+        // $plan = new Hope;
+        // $plan->name = $request->get('nama');
+        // $plan->cost = $request->get('biaya');
+        // $plan->month = $request->get('bulan');
+        // $plan->inflation = $request->get('inflasi');
+        // $plan->per_month = $request->get('perbulan');
+        // $plan->upcoming_costs = $request->get('biayadatang');
+        // $plan->save();
     }
 }
