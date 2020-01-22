@@ -9,13 +9,12 @@
 <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="page-header">
-            <h2 class="pageheader-title">Dashboard </h2>
-            <p class="pageheader-text">Nulla euismod urna eros, sit amet scelerisque torton lectus vel mauris facilisis faucibus at enim quis massa lobortis rutrum.</p>
+            <h2 class="pageheader-title mt-3 mb-0 text-dark">Dashboard </h2>
             <div class="page-breadcrumb">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">E-Commerce Dashboard Template</li>
+                        <li class="breadcrumb-item active" aria-current="page">Grafik Pemasukan & Pengeluaran</li>
                     </ol>
                 </nav>
             </div>
@@ -40,10 +39,10 @@
             <div class="card-body">
                 <div class="d-inline-block">
                     <h5 class="text-muted">Total Pemasukan</h5>
-                    <h2 class="mb-0">Rp {{ $incomes }}</h2>
+                    <h2 class="mb-0" id="biaya">Rp {{ $incomes }}</h2>
                 </div>
                 <div class="float-right icon-circle-small  icon-box-sm  bg-brand-light mt-1">
-                    <i class="fa fa-money-bill-alt fa-fw fa-sm text-brand"></i>
+                    <i class="fa fa-money-bill-alt fa-f w fa-sm text-brand"></i>
                 </div>
             </div>
         </div>
@@ -59,7 +58,7 @@
             <div class="card-body">
                 <div class="d-inline-block">
                     <h5 class="text-muted">Sisa Uang</h5>
-                    <h2 class="mb-0">Rp {{ $expenses-$incomes }}</h2>
+                    <h2 class="mb-0" id="biaya">Rp {{ $incomes-$expenses }}</h2>
                 </div>
                 <div class="float-right icon-circle-small  icon-box-sm  bg-brand-light mt-1">
                     <i class="fa fa-money-bill-alt fa-fw fa-sm text-brand"></i>
@@ -78,7 +77,7 @@
             <div class="card-body">
                 <div class="d-inline-block">
                     <h5 class="text-muted">Total Pengeluaran</h5>
-                    <h2 class="mb-0">Rp {{ $expenses }}</h2>
+                    <h2 class="mb-0" id="biaya"> Rp {{ $expenses }}</h2>
                 </div>
                 <div class="float-right icon-circle-small  icon-box-sm  bg-brand-light mt-1">
                     <i class="fa fa-money-bill-alt fa-fw fa-sm text-brand"></i>
@@ -384,7 +383,7 @@
                         responsive: true,
                         title: {
                             display: true,
-                            text: "Pengeluaran dan Pemasukan"
+                            text: "Data Pemasukan & Pengeluaran"
                         },
                         scales: {
                             xAxes: [{
@@ -433,6 +432,17 @@
         };
         chartku.update();
     }
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#biaya').mask('000.000.000', {
+            reverse: true
+        });
+    });
 </script>
 
 @endpush
