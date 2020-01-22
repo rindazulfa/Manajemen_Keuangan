@@ -83,7 +83,13 @@
                                         <a class="page-scroll" href="#home">Beranda</a>
                                     </li>
                                     <li class="nav-item">
+                                        <a class="page-scroll" href="#blog">Rumusan Masalah</a>
+                                    </li>
+                                    <li class="nav-item">
                                         <a class="page-scroll" href="#features">Tujuan</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#blog">Manfaat</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#about">Konsep Dasar</a>
@@ -91,16 +97,15 @@
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#team">Team</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#blog">Blog</a>
-                                    </li>
+
                                 </ul>
-                            </div> <!-- navbar collapse -->
+                            </div> 
+                            <!-- navbar collapse -->
 
                             <div class="navbar-btn d-none d-sm-inline-block">
                                 <a class="main-btn" data-scroll-nav="0" href="/dashboard">Register</a>
                             </div>
-                        </nav> <!-- navbar -->
+                        </nav> 
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
