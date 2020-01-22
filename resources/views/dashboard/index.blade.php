@@ -40,7 +40,7 @@
                 <div class="d-inline-block">
                     <h5 class="text-muted">Total Pemasukan</h5>
                     <?php $hasil = number_format($incomes,2,',','.'); ?>
-                    <h2 class="mb-0" id="biaya">{{$hasil }}</h2>
+                    <h2 class="mb-0" id="biaya">Rp {{$hasil }}</h2>
                 </div>
                 <div class="float-right icon-circle-small  icon-box-sm  bg-brand-light mt-1">
                     <i class="fa fa-money-bill-alt fa-f w fa-sm text-brand"></i>
@@ -60,7 +60,7 @@
                 <div class="d-inline-block">
                     <h5 class="text-muted">Sisa Uang</h5>
                     <?php $sisa = number_format($incomes-$expenses,2,',','.'); ?>
-                    <h2 class="mb-0" id="biaya">{{ $sisa}}</h2>
+                    <h2 class="mb-0" id="biaya">Rp {{ $sisa}}</h2>
                 </div>
                 <div class="float-right icon-circle-small  icon-box-sm  bg-brand-light mt-1">
                     <i class="fa fa-money-bill-alt fa-fw fa-sm text-brand"></i>
@@ -80,7 +80,7 @@
                 <div class="d-inline-block">
                     <h5 class="text-muted">Total Pengeluaran</h5>
                     <?php $keluar = number_format($expenses,2,',','.'); ?>
-                    <h2 class="mb-0" id="biaya"> {{ $keluar }}</h2>
+                    <h2 class="mb-0" id="biaya">Rp {{ $keluar }}</h2>
                 </div>
                 <div class="float-right icon-circle-small  icon-box-sm  bg-brand-light mt-1">
                     <i class="fa fa-money-bill-alt fa-fw fa-sm text-brand"></i>
@@ -438,14 +438,6 @@
 </script>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $('#biaya').mask('000.000.000', {
-            reverse: true
-        });
-    });
-</script>
 
 @endpush

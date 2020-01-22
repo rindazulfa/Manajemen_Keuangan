@@ -222,7 +222,7 @@ $(document).ready(function(){
                 });
        });
 
-       $( '#biaya' ).mask('000.000.000', {reverse: true});
+       $( '#biaya' ).mask('000.000.000.000', {reverse: true});
 
        function ajax()
        {
