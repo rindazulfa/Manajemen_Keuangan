@@ -9,8 +9,8 @@
             {{$errors->first()}}
         </div>
         @endif
-    <form method="POST" action="{{Route('login')}}" >
-        @csrf
+        <form method="POST" action="{{Route('login')}}">
+            @csrf
             <div class="form-group">
                 <input class="form-control form-control-lg" id="email" type="text" name="email" placeholder="Email" autocomplete="off">
             </div>
@@ -23,7 +23,10 @@
     </div>
     <div class="card-footer bg-white p-0  ">
         <div class="card-footer-item card-footer-item-bordered">
-        <a href="{{Route('register.index')}}" class="footer-link">Create An Account</a></div>
+            <p>Doesn't have many account? <a href="{{Route('register.index')}}" class="footer-link">Create An Account</a></p>
+        </div>
+        
+
 
     </div>
 </div>

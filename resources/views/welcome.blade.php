@@ -69,7 +69,7 @@
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/logo.svg" alt="Logo">
+                                <img src="assets/images/logo.png" alt="Logo">
                             </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
@@ -132,7 +132,7 @@
 
     <!--====== HEADER PART ENDS ======-->
 
-    <!--====== TUJUAN PART START ======-->
+    <!--====== RUMUSAN MASALAH PART START ======-->
     <!-- section title -->
     <section id="features" class="services-area pt-120">
         <div class="container">
@@ -140,7 +140,7 @@
                 <div class="col-lg-10">
                     <div class="section-title text-center pb-40">
                         <div class="line m-auto"></div>
-                        <h3 class="title">Jadi Tujuan, <span> membuat website ini adalah</span></h3>
+                        <h3 class="title">Rumusan <span>Masalah</span></h3>
                     </div>
                 </div>
             </div>
@@ -155,8 +155,8 @@
                             <i class="lni-baloon"></i>
                         </div>
                         <div class="services-content mt-30">
-                            <h4 class="services-title"><a href="#">Clean</a></h4>
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
+                            <h4 class="services-title"><a href="#">1</a></h4>
+                            <p class="text">Bagaimana mengetahui laporan pemasukan dan pengeluaran keuangan pada periode tertentu ? </p>
                             <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
                         </div>
                     </div> <!-- single services -->
@@ -170,8 +170,8 @@
                             <i class="lni-cog"></i>
                         </div>
                         <div class="services-content mt-30">
-                            <h4 class="services-title"><a href="#">Robust</a></h4>
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
+                            <h4 class="services-title"><a href="#">2</a></h4>
+                            <p class="text">Bagaimana mengawasi tingkat keuangan dalam bentuk data diagram statistik dari setiap periode yang ditentukan ?</p>
                             <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
                         </div>
                     </div>
@@ -185,15 +185,81 @@
                             <i class="lni-bolt-alt"></i>
                         </div>
                         <div class="services-content mt-30">
-                            <h4 class="services-title"><a href="#">Powerful</a></h4>
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
+                            <h4 class="services-title"><a href="#">3</a></h4>
+                            <p class="text">Bagaimana mengontrol dan mengawasi dari uang yang dimiliki saat ini ? </p>
                             <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
 
-            </div> 
-        </div> 
+            </div>
+        </div>
+    </section>
+
+    <!--====== RUMUSAN PART ENDS ======-->
+
+    <!--====== TUJUAN PART START ======-->
+    <!-- section title -->
+    <section id="features" class="services-area pt-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-title text-center pb-40">
+                        <div class="line m-auto"></div>
+                        <h3 class="title">Tujuan<span>nya adalah</span></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row justify-content-center">
+                <!-- single services -->
+                <div class="col-lg-4 col-md-7 col-sm-8">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <div class="services-icon">
+                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
+                            <img class="shape-1" src="assets/images/services-shape-1.svg" alt="shape">
+                            <i class="lni-baloon"></i>
+                        </div>
+                        <div class="services-content mt-30">
+                            <h4 class="services-title"><a href="#">1</a></h4>
+                            <p class="text">Mengetahui laporan pemasukan dan pengeluaran keuangan dalam periode tertentu.</p>
+                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
+                        </div>
+                    </div> <!-- single services -->
+                </div>
+                <!-- single services -->
+                <div class="col-lg-4 col-md-7 col-sm-8">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="services-icon">
+                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
+                            <img class="shape-1" src="assets/images/services-shape-2.svg" alt="shape">
+                            <i class="lni-cog"></i>
+                        </div>
+                        <div class="services-content mt-30">
+                            <h4 class="services-title"><a href="#">2</a></h4>
+                            <p class="text">Mengawasi tingkat keuangan dalam bentuk data diagram statistik dari setiap periode yang ditentukan ?</p>
+                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- single services -->
+                <div class="col-lg-4 col-md-7 col-sm-8">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <div class="services-icon">
+                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
+                            <img class="shape-1" src="assets/images/services-shape-3.svg" alt="shape">
+                            <i class="lni-bolt-alt"></i>
+                        </div>
+                        <div class="services-content mt-30">
+                            <h4 class="services-title"><a href="#">3</a></h4>
+                            <p class="text">Bagaimana mengontrol dan mengawasi dari uang yang dimiliki saat ini ? </p>
+                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
     <!--====== TUJUAN PART ENDS ======-->
@@ -207,9 +273,14 @@
                     <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="section-title">
                             <div class="line"></div>
-                            <h3 class="title">Konsep  <span>Dasar</span></h3>
+                            <h3 class="title">Konsep <span>Dasar</span></h3>
                         </div> <!-- section title -->
-                        <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
+                        <p class="text">Pengguna memasukkan income (pemasukan) dalam bentuk Tunai atau Bank. Dan mengatur jumlah pemasukan,
+                            darimana pemasukkan didapat, tanggal, keterangan, dan terdapat kategori
+                            pemasukan seperti dari bisnis, gaji, keluarga, beasiswa, komisi. Agar dapat mengetahui semua pemasukan pengguna.
+                            Pengguna juga dapat melakukan expense (pengeluaran) dalam bentuk Tunai atau Bank. Dan mengatur jumlah pengeluaran,
+                            kemana pengeluaran dikeluarkan, tanggal, keterangan, dan terdapat kategori pengeluaran seperti untuk makan, tagihan,
+                            belanja, travel, Pendidikan, hiburan, kartu kredit, kesehatan, menyewa, pajak, kendaraan. </p>
                         <a href="#" class="main-btn">Try it Free</a>
                     </div> <!-- about content -->
                 </div>
@@ -311,10 +382,14 @@
                             <h4>Bela Tertiana</h4>
                             <p class="designation">18410</p>
                             <div class="align-items-center justify-content-center d-flex">
-                                <a href="https://www.instagram.com/gamawskt/" target="_blank"><i class=""></i></a>
-                                <a href="" target="_blank"><i class="ti-linkedin"></i></a>
-                                <a href="" target="_blank"><i class="ti-github"></i></a>
-                                <a href="" target="_blank"><i class="ti-dribbble"></i></a>
+                                <div class="social">
+                                    <!-- <ul class="social"> -->
+                                    <a href="#"><i class="lni-facebook-filled"></i></a>
+                                    <a href="#"><i class="lni-twitter-filled"></i></a>
+                                    <a href="#"><i class="lni-instagram-filled"></i></a>
+                                    <a href="#"><i class="lni-github-original"></i></a>
+                                    <!-- </ul> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -332,10 +407,12 @@
                             <h4>Nada Navis</h4>
                             <p class="designation">18410100124</p>
                             <div class="align-items-center justify-content-center d-flex">
-                                <a href="https://www.instagram.com/gamawskt/" target="_blank"><i class=""></i></a>
-                                <a href="" target="_blank"><i class="ti-linkedin"></i></a>
-                                <a href="" target="_blank"><i class="ti-github"></i></a>
-                                <a href="" target="_blank"><i class="ti-dribbble"></i></a>
+                                <ul class="social">
+                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
+                                    <li><a href="#"><i class="lni-instagram-filled"></i></a></li>
+                                    <li><a href="#"><i class="lni-github-original"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -353,10 +430,12 @@
                             <h4>Putu Ayu Amalia</h4>
                             <p class="designation">18410100128</p>
                             <div class="align-items-center justify-content-center d-flex">
-                                <a href="https://www.instagram.com/gamawskt/" target="_blank"><i class=""></i></a>
-                                <a href="" target="_blank"><i class="ti-linkedin"></i></a>
-                                <a href="" target="_blank"><i class="ti-github"></i></a>
-                                <a href="" target="_blank"><i class="ti-dribbble"></i></a>
+                                <ul class="social">
+                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
+                                    <li><a href="#"><i class="lni-instagram-filled"></i></a></li>
+                                    <li><a href="#"><i class="lni-github-original"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -374,10 +453,12 @@
                             <h4>Eka Hirinda Zulfa</h4>
                             <p class="designation">18410100132</p>
                             <div class="align-items-center justify-content-center d-flex">
-                                <a href="https://www.instagram.com/gamawskt/" target="_blank"><i class=""></i></a>
-                                <a href="" target="_blank"><i class="ti-linkedin"></i></a>
-                                <a href="" target="_blank"><i class="ti-github"></i></a>
-                                <a href="" target="_blank"><i class="ti-dribbble"></i></a>
+                                <ul class="social">
+                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                                    <li><a href="@rindazulfa_"><i class="lni-twitter-filled"></i></a></li>
+                                    <li><a href="ekahirinda"><i class="lni-instagram-filled"></i></a></li>
+                                    <li><a href="https://github.com/rindazulfa"><i class="lni-github-original"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -395,10 +476,12 @@
                             <h4>Ayub</h4>
                             <p class="designation">18410</p>
                             <div class="align-items-center justify-content-center d-flex">
-                                <a href="https://www.instagram.com/gamawskt/" target="_blank"><i class=""></i></a>
-                                <a href="" target="_blank"><i class="ti-linkedin"></i></a>
-                                <a href="" target="_blank"><i class="ti-github"></i></a>
-                                <a href="" target="_blank"><i class="ti-dribbble"></i></a>
+                                <ul class="social">
+                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
+                                    <li><a href="#"><i class="lni-instagram-filled"></i></a></li>
+                                    <li><a href="#"><i class="lni-github-original"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -436,72 +519,48 @@
                     <div class="col-lg-4 col-md-6 col-sm-8">
                         <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                             <a class="logo" href="#">
-                                <img src="assets/images/logo.svg" alt="logo">
+                                <img src="assets/images/logo.png" alt="logo">
                             </a>
                             <p class="text">Lorem ipsum dolor sit amet consetetur sadipscing elitr, sederfs diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
                             <ul class="social">
                                 <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
                                 <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
                                 <li><a href="#"><i class="lni-instagram-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
+                                <li><a href="#"><i class="lni-github-original"></i></a></li>
                             </ul>
                         </div> <!-- footer about -->
                     </div>
-                    <div class="col-lg-5 col-md-7 col-sm-7">
-                        <div class="footer-link d-flex mt-50 justify-content-md-between">
-                            <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                                <div class="footer-title">
-                                    <h4 class="title">Quick Link</h4>
-                                </div>
-                                <ul class="link">
-                                    <li><a href="#">Road Map</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Refund Policy</a></li>
-                                    <li><a href="#">Terms of Service</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                </ul>
-                            </div> <!-- footer wrapper -->
-                            <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                                <div class="footer-title">
-                                    <h4 class="title">Resources</h4>
-                                </div>
-                                <ul class="link">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Page</a></li>
-                                    <li><a href="#">Portfolio</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div> <!-- footer wrapper -->
-                        </div> <!-- footer link -->
-                    </div>
+
+                    <!-- footer contact -->
                     <div class="col-lg-3 col-md-5 col-sm-5">
                         <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
                             <div class="footer-title">
                                 <h4 class="title">Contact Us</h4>
                             </div>
                             <ul class="contact">
-                                <li>+809272561823</li>
-                                <li>info@gmail.com</li>
-                                <li>www.yourweb.com</li>
+                                <li>0888</li>
+                                <li>Bumblebee@gmail.com</li>
+                                <li>www.bumblebee.com</li>
                                 <li>123 Stree New York City , United <br> States Of America 750.</li>
                             </ul>
-                        </div> <!-- footer contact -->
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- footer widget -->
+                </div>
+            </div>
+            <!-- footer widget -->
+            <!-- copyright content -->
             <div class="footer-copyright">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="copyright d-sm-flex justify-content-between">
                             <div class="copyright-content">
-                                <p class="text">Designed and Developed by <a href="https://uideck.com" rel="nofollow">UIdeck</a></p>
-                            </div> <!-- copyright content -->
-                        </div> <!-- copyright -->
+                                <p class="text">Designed and Developed by Bumblebee</p>
+                            </div>
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- footer copyright -->
-        </div> <!-- container -->
+                </div>
+            </div>
+        </div>
         <div id="particles-2"></div>
     </footer>
 
