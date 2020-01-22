@@ -39,7 +39,8 @@
             <div class="card-body">
                 <div class="d-inline-block">
                     <h5 class="text-muted">Total Pemasukan</h5>
-                    <h2 class="mb-0" id="biaya">Rp {{ $incomes }}</h2>
+                    <?php $hasil = number_format($incomes,2,',','.'); ?>
+                    <h2 class="mb-0" id="biaya">{{$hasil }}</h2>
                 </div>
                 <div class="float-right icon-circle-small  icon-box-sm  bg-brand-light mt-1">
                     <i class="fa fa-money-bill-alt fa-f w fa-sm text-brand"></i>
@@ -58,7 +59,8 @@
             <div class="card-body">
                 <div class="d-inline-block">
                     <h5 class="text-muted">Sisa Uang</h5>
-                    <h2 class="mb-0" id="biaya">Rp {{ $incomes-$expenses }}</h2>
+                    <?php $sisa = number_format($incomes-$expenses,2,',','.'); ?>
+                    <h2 class="mb-0" id="biaya">{{ $sisa}}</h2>
                 </div>
                 <div class="float-right icon-circle-small  icon-box-sm  bg-brand-light mt-1">
                     <i class="fa fa-money-bill-alt fa-fw fa-sm text-brand"></i>
@@ -77,7 +79,8 @@
             <div class="card-body">
                 <div class="d-inline-block">
                     <h5 class="text-muted">Total Pengeluaran</h5>
-                    <h2 class="mb-0" id="biaya"> Rp {{ $expenses }}</h2>
+                    <?php $keluar = number_format($expenses,2,',','.'); ?>
+                    <h2 class="mb-0" id="biaya"> {{ $keluar }}</h2>
                 </div>
                 <div class="float-right icon-circle-small  icon-box-sm  bg-brand-light mt-1">
                     <i class="fa fa-money-bill-alt fa-fw fa-sm text-brand"></i>
