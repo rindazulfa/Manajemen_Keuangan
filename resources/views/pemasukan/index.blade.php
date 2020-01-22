@@ -46,10 +46,11 @@
                         </thead>
                         <tbody>
                             @foreach($incomes as $key)
+                            <?php $hasil = 'Rp ' . number_format($key->total,2,',','.'); ?>
                             <tr>
                                 <td>{{$key->date}}</td>
                                 <td>{{$key->name}}</td>
-                                <td>{{$key->total}}</td>
+                                <td>{{$hasil}}</td>
                                 <td>{{$key->from}}</td>
                                 <td>{{$key->category}}</td>
                                 <td>{{$key->method}}</td>

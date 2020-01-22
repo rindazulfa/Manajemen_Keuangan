@@ -45,10 +45,11 @@
                         </thead>
                         <tbody>
                             @foreach($expenses as $shir)
+                            <?php $hasil = 'Rp ' . number_format($shir->total,2,',','.'); ?>
                             <tr>
                                 <td>{{ $shir->date }}</td>
                                 <td>{{ $shir->name }}</td>
-                                <td>{{ $shir->total }}</td>
+                                <td>{{ $hasil }}</td>
                                 <td>{{ $shir->to }}</td>
                                 <td>{{ $shir->category }}</td>
                                 <td>{{ $shir->method }}</td>

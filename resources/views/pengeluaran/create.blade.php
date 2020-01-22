@@ -87,7 +87,7 @@
                         <div class="col-lg-6 col-sm-12">
                             <div class="form-group">
                                 <label for="inputText3" class="col-form-label">Total</label>
-                                <input id="biaya" type="number" name="total" class="form-control">
+                                <input id="biaya" type="text" name="total" class="form-control">
                             </div>
                         </div>
 
@@ -119,7 +119,7 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
     $(document).ready(function() {
-        $('#biaya').mask('000.000.000', {
+        $('#biaya').mask('000.000.000.000', {
             reverse: true
         });
     });

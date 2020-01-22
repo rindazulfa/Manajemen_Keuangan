@@ -1,6 +1,6 @@
 $(function() {
     "use strict";
-    $(window).on("load", function(e) { $(".preloader").delay(500).fadeOut(500) }), $(window).on("scroll", function(e) { $(window).scrollTop() < 20 ? ($(".navbar-area").removeClass("sticky"), $(".navbar .navbar-brand img").attr("src", "assets/images/logo.png")) : ($(".navbar-area").addClass("sticky"), $(".navbar .navbar-brand img").attr("src", "assets/images/logo-2.svg")) });
+    $(window).on("load", function(e) { $(".preloader").delay(500).fadeOut(500) }), $(window).on("scroll", function(e) { $(window).scrollTop() < 20 ? ($(".navbar-area").removeClass("sticky"), $(".navbar .navbar-brand img").attr("src", "assets/images/logo.png")) : ($(".navbar-area").addClass("sticky"), $(".navbar .navbar-brand img").attr("src", "assets/images/logo.png")) });
     var e = $(".page-scroll");
     $(window).scroll(function() {
         var a = $(this).scrollTop();
