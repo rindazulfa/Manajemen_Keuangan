@@ -376,7 +376,7 @@
                         </div>
                         <div class="meta-text text-sm-center">
                             <h4>Bela Tertiana</h4>
-                            <p class="designation">18410</p>
+                            <p class="designation">18410100103</p>
                             <div class="align-items-center justify-content-center d-flex">
                                 <div class="social">
                                     <!-- <ul class="social"> -->
@@ -403,12 +403,14 @@
                             <h4>Nada Navis</h4>
                             <p class="designation">18410100124</p>
                             <div class="align-items-center justify-content-center d-flex">
-                                <!-- <ul class="social"> -->
-                                <a href="#"><i class="lni-facebook-filled"></i></a>
-                                <a href="#"><i class="lni-twitter-filled"></i></a>
-                                <a href="#"><i class="lni-instagram-filled"></i></a>
-                                <a href="#"><i class="lni-github-original"></i></a>
-                                <!-- </ul> -->
+                                <div class="social">
+                                    <!-- <ul class="social"> -->
+                                    <a href="#"><i class="lni-facebook-filled"></i></a>
+                                    <a href="#"><i class="lni-twitter-filled"></i></a>
+                                    <a href="#"><i class="lni-instagram-filled"></i></a>
+                                    <a href="#"><i class="lni-github-original"></i></a>
+                                    <!-- </ul> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -426,12 +428,14 @@
                             <h4>Putu Ayu Amalia</h4>
                             <p class="designation">18410100128</p>
                             <div class="align-items-center justify-content-center d-flex">
-                                <!-- <ul class="social"> -->
-                                <a href="#"><i class="lni-facebook-filled"></i></a>
-                                <a href="#"><i class="lni-twitter-filled"></i></a>
-                                <a href="#"><i class="lni-instagram-filled"></i></a>
-                                <a href="#"><i class="lni-github-original"></i></a>
-                                <!-- </ul> -->
+                                <div class="social">
+                                    <!-- <ul class="social"> -->
+                                    <a href="#"><i class="lni-facebook-filled"></i></a>
+                                    <a href="#"><i class="lni-twitter-filled"></i></a>
+                                    <a href="#"><i class="lni-instagram-filled"></i></a>
+                                    <a href="#"><i class="lni-github-original"></i></a>
+                                    <!-- </ul> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -449,12 +453,14 @@
                             <h4>Eka Hirinda Zulfa</h4>
                             <p class="designation">18410100132</p>
                             <div class="align-items-center justify-content-center d-flex">
-                                <!-- <ul class="social"> -->
-                                <a href="#"><i class="lni-facebook-filled"></i></a>
-                                <a href="#"><i class="lni-twitter-filled"></i></a>
-                                <a href="#"><i class="lni-instagram-filled"></i></a>
-                                <a href="#"><i class="lni-github-original"></i></a>
-                                <!-- </ul> -->
+                                <div class="social">
+                                    <!-- <ul class="social"> -->
+                                    <a href="#"><i class="lni-facebook-filled"></i></a>
+                                    <a href="#"><i class="lni-twitter-filled"></i></a>
+                                    <a href="#"><i class="lni-instagram-filled"></i></a>
+                                    <a href="#"><i class="lni-github-original"></i></a>
+                                    <!-- </ul> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -470,14 +476,16 @@
                         </div>
                         <div class="meta-text text-sm-center">
                             <h4>Ayub</h4>
-                            <p class="designation">18410</p>
+                            <p class="designation">18410100174</p>
                             <div class="align-items-center justify-content-center d-flex">
-                                <!-- <ul class="social"> -->
-                                <a href="#"><i class="lni-facebook-filled"></i></a>
-                                <a href="#"><i class="lni-twitter-filled"></i></a>
-                                <a href="#"><i class="lni-instagram-filled"></i></a>
-                                <a href="#"><i class="lni-github-original"></i></a>
-                                <!-- </ul> -->
+                                <div class="social">
+                                    <!-- <ul class="social"> -->
+                                    <a href="#"><i class="lni-facebook-filled"></i></a>
+                                    <a href="#"><i class="lni-twitter-filled"></i></a>
+                                    <a href="#"><i class="lni-instagram-filled"></i></a>
+                                    <a href="#"><i class="lni-github-original"></i></a>
+                                    <!-- </ul> -->
+                                </div>
                             </div>
                         </div>
                     </div>
