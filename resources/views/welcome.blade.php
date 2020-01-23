@@ -69,7 +69,7 @@
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html">
-                            <img src="{{asset('assets/images/logo.png')}}" alt="Logo">
+                                <img src="{{asset('assets/images/logo.png')}}" alt="Logo">
                             </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
@@ -83,16 +83,16 @@
                                         <a class="page-scroll" href="#home">Beranda</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#blog">Rumusan Masalah</a>
+                                        <a class="page-scroll" href="#rumusan">Rumusan Masalah</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#features">Tujuan</a>
+                                        <a class="page-scroll" href="#tujuan">Tujuan</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#blog">Manfaat</a>
+                                        <a class="page-scroll" href="#batasan">Batasan Masalah</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#about">Konsep Dasar</a>
+                                        <a class="page-scroll" href="#konsep">Konsep Dasar</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#team">Team</a>
@@ -107,9 +107,9 @@
                             </div>
                         </nav>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- navbar area -->
+                </div>
+            </div>
+        </div>
 
         <div id="home" class="header-hero bg_cover" style="background-image: url(assets/images/banner-bg.svg)">
             <div class="container">
@@ -120,26 +120,26 @@
                             <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Aplikasi akutansi gratis</h2>
                             <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Yuk, Buruan Gabung!! Atur Keuangan Pribadimu & Capai Target Impianmu!!</p>
                             <a href="/dashboard" rel="nofollow" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Memulai</a>
-                        </div> <!-- header hero content -->
+                        </div>
                     </div>
-                </div> <!-- row -->
+                </div>
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="header-hero-image text-center wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1.4s">
                             <img src="assets/images/header-hero.png" alt="hero">
-                        </div> <!-- header hero image -->
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
+                </div>
+            </div>
             <div id="particles-1" class="particles"></div>
-        </div> <!-- header hero -->
+        </div>
     </header>
 
     <!--====== HEADER PART ENDS ======-->
 
     <!--====== RUMUSAN MASALAH PART START ======-->
     <!-- section title -->
-    <section id="features" class="services-area pt-120">
+    <section id="rumusan" class="services-area pt-120">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
@@ -153,31 +153,43 @@
             <div class="row justify-content-center">
                 <!-- single services -->
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="single-services text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                         <div class="services-icon">
                             <img class="shape" src="assets/images/services-shape.svg" alt="shape">
                             <img class="shape-1" src="assets/images/services-shape-1.svg" alt="shape">
                             <i class="lni-baloon"></i>
                         </div>
-                        <div class="services-content mt-30">
+                        <div class="services-content ">
                             <h4 class="services-title"><a href="#">1</a></h4>
                             <p class="text">Bagaimana mengetahui laporan pemasukan dan pengeluaran keuangan pada periode tertentu ? </p>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
                         </div>
-                    </div> <!-- single services -->
+                    </div>
                 </div>
                 <!-- single services -->
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="single-services text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="services-icon">
                             <img class="shape" src="assets/images/services-shape.svg" alt="shape">
                             <img class="shape-1" src="assets/images/services-shape-2.svg" alt="shape">
                             <i class="lni-cog"></i>
                         </div>
-                        <div class="services-content mt-30">
+                        <div class="services-content">
                             <h4 class="services-title"><a href="#">2</a></h4>
                             <p class="text">Bagaimana mengawasi tingkat keuangan dalam bentuk data diagram statistik dari setiap periode yang ditentukan ?</p>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- single services -->
+                <div class="col-lg-4 col-md-7 col-sm-8">
+                    <div class="single-services text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <div class="services-icon">
+                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
+                            <img class="shape-1" src="assets/images/services-shape-3.svg" alt="shape">
+                            <i class="lni-bolt-alt"></i>
+                        </div>
+                        <div class="services-content mt-30">
+                            <h4 class="services-title"><a href="#">3</a></h4>
+                            <p class="text">Bagaimana mengontrol dan mengawasi dari uang yang dimiliki saat ini ?</p>
                         </div>
                     </div>
                 </div>
@@ -190,9 +202,8 @@
                             <i class="lni-bolt-alt"></i>
                         </div>
                         <div class="services-content mt-30">
-                            <h4 class="services-title"><a href="#">3</a></h4>
-                            <p class="text">Bagaimana mengontrol dan mengawasi dari uang yang dimiliki saat ini ? </p>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
+                            <h4 class="services-title"><a href="#">4</a></h4>
+                            <p class="text">Bagaimana mengetahui dan menentukan rencana yang akan mendatang?</p>
                         </div>
                     </div>
                 </div>
@@ -205,7 +216,7 @@
 
     <!--====== TUJUAN PART START ======-->
     <!-- section title -->
-    <section id="features" class="services-area pt-120">
+    <section id="tujuan" class="services-area pt-120">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
@@ -228,7 +239,6 @@
                         <div class="services-content mt-30">
                             <h4 class="services-title"><a href="#">1</a></h4>
                             <p class="text">Mengetahui laporan pemasukan dan pengeluaran keuangan dalam periode tertentu.</p>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
                         </div>
                     </div> <!-- single services -->
                 </div>
@@ -242,8 +252,7 @@
                         </div>
                         <div class="services-content mt-30">
                             <h4 class="services-title"><a href="#">2</a></h4>
-                            <p class="text">Mengawasi tingkat keuangan dalam bentuk data diagram statistik dari setiap periode yang ditentukan ?</p>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
+                            <p class="text">Mengawasi tingkat keuangan dalam bentuk data diagram statistik dari setiap periode yang ditentukan.</p>
                         </div>
                     </div>
                 </div>
@@ -257,8 +266,21 @@
                         </div>
                         <div class="services-content mt-30">
                             <h4 class="services-title"><a href="#">3</a></h4>
-                            <p class="text">Bagaimana mengontrol dan mengawasi dari uang yang dimiliki saat ini ? </p>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
+                            <p class="text">Mengontrol dan mengawasi dari uang yang dimiliki saat ini.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- single services -->
+                <div class="col-lg-4 col-md-7 col-sm-8">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <div class="services-icon">
+                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
+                            <img class="shape-1" src="assets/images/services-shape-3.svg" alt="shape">
+                            <i class="lni-bolt-alt"></i>
+                        </div>
+                        <div class="services-content mt-30">
+                            <h4 class="services-title"><a href="#">4</a></h4>
+                            <p class="text">Mengetahui dan menentukan rencana yang akan mendatang.</p>
                         </div>
                     </div>
                 </div>
@@ -269,43 +291,38 @@
 
     <!--====== TUJUAN PART ENDS ======-->
 
-    <!--====== KONSEP DASAR PART START ======-->
+    <!--====== BATASAN MASALAH PART START ======-->
 
-    <section id="about" class="about-area pt-70">
+    <section id="batasan" class="about-area pt-70">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="section-title">
                             <div class="line"></div>
-                            <h3 class="title">Konsep <span>Dasar</span></h3>
-                        </div> <!-- section title -->
-                        <p class="text">Pengguna memasukkan income (pemasukan) dalam bentuk Tunai atau Bank. Dan mengatur jumlah pemasukan,
-                            darimana pemasukkan didapat, tanggal, keterangan, dan terdapat kategori
-                            pemasukan seperti dari bisnis, gaji, keluarga, beasiswa, komisi. Agar dapat mengetahui semua pemasukan pengguna.
-                            Pengguna juga dapat melakukan expense (pengeluaran) dalam bentuk Tunai atau Bank. Dan mengatur jumlah pengeluaran,
-                            kemana pengeluaran dikeluarkan, tanggal, keterangan, dan terdapat kategori pengeluaran seperti untuk makan, tagihan,
-                            belanja, travel, Pendidikan, hiburan, kartu kredit, kesehatan, menyewa, pajak, kendaraan. </p>
-                        <a href="#" class="main-btn">Try it Free</a>
-                    </div> <!-- about content -->
+                            <h3 class="title">Batasan <span>Masalah</span></h3>
+                        </div>
+                        <p class="text">
+                            Berdasarkan uraian rumusan masalah dan tujuan diatas, maka dalam website iPocket ini hanya membahas dan berisi mengenai laporan pemasukan dan pengeluaran pribadi seseorang dalam periode tertentu, data statistik berupa diagram berdasarkan pada pemasukan dan pengeluaran pada periode tertentu, serta perhitungan untuk menentukan dana impian pengguna.
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
                         <img src="assets/images/about1.svg" alt="about">
-                    </div> <!-- about image -->
+                    </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+            </div>
+        </div>
         <div class="about-shape-1">
             <img src="assets/images/about-shape-1.svg" alt="shape">
         </div>
     </section>
 
-    <!--====== KONSEP DASAR PART ENDS ======-->
+    <!--====== BATASAN MASALAH PART ENDS ======-->
 
-    <!--====== ABOUT PART START ======-->
+    <!--====== KONSEP DASAR PART START ======-->
 
-    <section class="about-area pt-70">
+    <section id="konsep" class="about-area pt-70">
         <div class="about-shape-2">
             <img src="assets/images/about-shape-2.svg" alt="shape">
         </div>
@@ -315,50 +332,24 @@
                     <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="section-title">
                             <div class="line"></div>
-                            <h3 class="title">Modern design <span> with Essential Features</span></h3>
+                            <h3 class="title">Konsep <span> Dasar</span></h3>
                         </div> <!-- section title -->
-                        <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
-                        <a href="#" class="main-btn">Try it Free</a>
-                    </div> <!-- about content -->
+                        <p class="text">
+                            Pengguna memasukkan income (pemasukan) dalam bentuk Tunai atau Bank. Dan mengatur jumlah pemasukan, darimana pemasukkan didapat, tanggal, keterangan, dan terdapat kategori pemasukan seperti dari bisnis, gaji, keluarga, beasiswa, komisi. Agar dapat mengetahui semua pemasukan pengguna. Pengguna juga dapat melakukan expense (pengeluaran) dalam bentuk Tunai atau Bank. Dan mengatur jumlah pengeluaran, kemana pengeluaran dikeluarkan, tanggal, keterangan, dan terdapat kategori pengeluaran seperti untuk makan, tagihan, belanja, travel, Pendidikan, hiburan, kartu kredit, kesehatan, menyewa, pajak, kendaraan.
+                            Digolongkan berdasarkan kategori pemasukan & pengeluaran. Mengetahui jumlah sisa uang yang dimiliki. Dengan menghitung total pendapatan dengan total pengeluaran. Dan dapat digolongkan juga dengan berdasarkan setiap bagian kategori pemasukan & pengeluaran yang ada.
+                        </p>
+                    </div>
                 </div>
                 <div class="col-lg-6 order-lg-first">
                     <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
                         <img src="assets/images/about2.svg" alt="about">
-                    </div> <!-- about image -->
+                    </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-
-    <!--====== ABOUT PART START ======-->
-
-    <section class="about-area pt-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <div class="section-title">
-                            <div class="line"></div>
-                            <h3 class="title"><span>Crafted for</span> SaaS, App and Software Landing Page</h3>
-                        </div> <!-- section title -->
-                        <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
-                        <a href="#" class="main-btn">Try it Free</a>
-                    </div> <!-- about content -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <img src="assets/images/about3.svg" alt="about">
-                    </div> <!-- about image -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-        <div class="about-shape-1">
-            <img src="assets/images/about-shape-1.svg" alt="shape">
+            </div>
         </div>
     </section>
 
-    <!--====== ABOUT PART ENDS ======-->
+
 
     <!--====== START TEAM ======-->
     <section id="team" class="services-area pt-120">
@@ -412,12 +403,12 @@
                             <h4>Nada Navis</h4>
                             <p class="designation">18410100124</p>
                             <div class="align-items-center justify-content-center d-flex">
-                                <ul class="social">
-                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-instagram-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-github-original"></i></a></li>
-                                </ul>
+                                <!-- <ul class="social"> -->
+                                <a href="#"><i class="lni-facebook-filled"></i></a>
+                                <a href="#"><i class="lni-twitter-filled"></i></a>
+                                <a href="#"><i class="lni-instagram-filled"></i></a>
+                                <a href="#"><i class="lni-github-original"></i></a>
+                                <!-- </ul> -->
                             </div>
                         </div>
                     </div>
@@ -435,12 +426,12 @@
                             <h4>Putu Ayu Amalia</h4>
                             <p class="designation">18410100128</p>
                             <div class="align-items-center justify-content-center d-flex">
-                                <ul class="social">
-                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-instagram-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-github-original"></i></a></li>
-                                </ul>
+                                <!-- <ul class="social"> -->
+                                <a href="#"><i class="lni-facebook-filled"></i></a>
+                                <a href="#"><i class="lni-twitter-filled"></i></a>
+                                <a href="#"><i class="lni-instagram-filled"></i></a>
+                                <a href="#"><i class="lni-github-original"></i></a>
+                                <!-- </ul> -->
                             </div>
                         </div>
                     </div>
@@ -458,12 +449,12 @@
                             <h4>Eka Hirinda Zulfa</h4>
                             <p class="designation">18410100132</p>
                             <div class="align-items-center justify-content-center d-flex">
-                                <ul class="social">
-                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                    <li><a href="@rindazulfa_"><i class="lni-twitter-filled"></i></a></li>
-                                    <li><a href="ekahirinda"><i class="lni-instagram-filled"></i></a></li>
-                                    <li><a href="https://github.com/rindazulfa"><i class="lni-github-original"></i></a></li>
-                                </ul>
+                                <!-- <ul class="social"> -->
+                                <a href="#"><i class="lni-facebook-filled"></i></a>
+                                <a href="#"><i class="lni-twitter-filled"></i></a>
+                                <a href="#"><i class="lni-instagram-filled"></i></a>
+                                <a href="#"><i class="lni-github-original"></i></a>
+                                <!-- </ul> -->
                             </div>
                         </div>
                     </div>
@@ -481,12 +472,12 @@
                             <h4>Ayub</h4>
                             <p class="designation">18410</p>
                             <div class="align-items-center justify-content-center d-flex">
-                                <ul class="social">
-                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-instagram-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-github-original"></i></a></li>
-                                </ul>
+                                <!-- <ul class="social"> -->
+                                <a href="#"><i class="lni-facebook-filled"></i></a>
+                                <a href="#"><i class="lni-twitter-filled"></i></a>
+                                <a href="#"><i class="lni-instagram-filled"></i></a>
+                                <a href="#"><i class="lni-github-original"></i></a>
+                                <!-- </ul> -->
                             </div>
                         </div>
                     </div>
@@ -524,7 +515,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-8">
                         <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                             <a class="logo" href="#">
-                            <img src="{{asset('assets/images/logo.png')}}" alt="logo">
+                                <img src="{{asset('assets/images/logo.png')}}" alt="logo">
                             </a>
                             <p class="text">Lorem ipsum dolor sit amet consetetur sadipscing elitr, sederfs diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
                             <ul class="social">
