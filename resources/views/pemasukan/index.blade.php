@@ -1,8 +1,5 @@
 @extends('master')
-
 @section('content')
-
-
 <!-- ============================================================== -->
 <!-- pageheader  -->
 <!-- ============================================================== -->
@@ -13,7 +10,8 @@
             <div class="page-breadcrumb">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/dashboard" class="breadcrumb-link">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="/dashboard" 
+                        class="breadcrumb-link">Dashboard</a></li>
                         <li class="breadcrumb-item active" aria-current="page">List Pemasukan</li>
                     </ol>
                 </nav>
@@ -24,7 +22,6 @@
 <!-- ============================================================== -->
 <!-- end pageheader  -->
 <!-- ============================================================== -->
-
 <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
         <div class="card">

@@ -71,7 +71,9 @@
                             <a class="navbar-brand" href="index.html">
                                 <img src="{{asset('assets/images/logo.png')}}" alt="Logo">
                             </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                            aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
@@ -116,16 +118,22 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="header-hero-content text-center">
-                            <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Bumblebee</h3>
-                            <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Aplikasi akutansi gratis</h2>
-                            <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Yuk, Buruan Gabung!! Atur Keuangan Pribadimu & Capai Target Impianmu!!</p>
-                            <a href="/register" rel="nofollow" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Daftar Sekarang!</a>
+                            <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" 
+                            data-wow-delay="0.2s">Bumblebee</h3>
+                            <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" 
+                            data-wow-delay="0.5s">Aplikasi akutansi gratis</h2>
+                            <p class="text wow fadeInUp" data-wow-duration="1.3s" 
+                            data-wow-delay="0.8s">Yuk, Buruan Gabung!! Atur Keuangan Pribadimu 
+                            & Capai Target Impianmu!!</p>
+                            <a href="/register" rel="nofollow" class="main-btn wow fadeInUp" 
+                            data-wow-duration="1.3s" data-wow-delay="1.1s">Daftar Sekarang!</a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="header-hero-image text-center wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1.4s">
+                        <div class="header-hero-image text-center wow fadeIn" data-wow-duration="1.3s" 
+                        data-wow-delay="1.4s">
                             <img src="assets/images/header-hero.png" alt="hero">
                         </div>
                     </div>
@@ -153,7 +161,8 @@
             <div class="row justify-content-center">
                 <!-- single services -->
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-services text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="single-services text-center wow fadeIn" data-wow-duration="1s" 
+                    data-wow-delay="0.2s">
                         <div class="services-icon">
                             <img class="shape" src="assets/images/services-shape.svg" alt="shape">
                             <img class="shape-1" src="assets/images/services-shape-1.svg" alt="shape">
@@ -161,13 +170,15 @@
                         </div>
                         <div class="services-content ">
                             <h4 class="services-title"><a href="#">1</a></h4>
-                            <p class="text">Bagaimana mengetahui laporan pemasukan dan pengeluaran keuangan pada periode tertentu ? </p>
+                            <p class="text">Bagaimana mengetahui laporan pemasukan dan pengeluaran 
+                                keuangan pada periode tertentu ? </p>
                         </div>
                     </div>
                 </div>
                 <!-- single services -->
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-services text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="single-services text-center wow fadeIn" data-wow-duration="1s" 
+                    data-wow-delay="0.5s">
                         <div class="services-icon">
                             <img class="shape" src="assets/images/services-shape.svg" alt="shape">
                             <img class="shape-1" src="assets/images/services-shape-2.svg" alt="shape">
@@ -175,7 +186,8 @@
                         </div>
                         <div class="services-content">
                             <h4 class="services-title"><a href="#">2</a></h4>
-                            <p class="text">Bagaimana mengawasi tingkat keuangan dalam bentuk data diagram statistik dari setiap periode yang ditentukan ?</p>
+                            <p class="text">Bagaimana mengawasi tingkat keuangan dalam bentuk data diagram 
+                                statistik dari setiap periode yang ditentukan ?</p>
                         </div>
                     </div>
                 </div>
@@ -184,7 +196,8 @@
             <div class="row justify-content-center">
                 <!-- single services -->
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" 
+                    data-wow-delay="0.8s">
                         <div class="services-icon">
                             <img class="shape" src="assets/images/services-shape.svg" alt="shape">
                             <img class="shape-1" src="assets/images/services-shape-3.svg" alt="shape">
@@ -192,13 +205,15 @@
                         </div>
                         <div class="services-content">
                             <h4 class="services-title"><a href="#">3</a></h4>
-                            <p class="text">Bagaimana mengontrol dan mengawasi dari uang yang dimiliki saat ini ?</p>
+                            <p class="text">Bagaimana mengontrol dan mengawasi dari uang yang 
+                                dimiliki saat ini ?</p>
                         </div>
                     </div>
                 </div>
                 <!-- single services -->
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" 
+                    data-wow-delay="0.8s">
                         <div class="services-icon">
                             <img class="shape" src="assets/images/services-shape.svg" alt="shape">
                             <img class="shape-1" src="assets/images/services-shape-1.svg" alt="shape">
@@ -232,7 +247,8 @@
             <div class="row justify-content-center">
                 <!-- single services -->
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" 
+                    data-wow-delay="0.2s">
                         <div class="services-icon">
                             <img class="shape" src="assets/images/services-shape.svg" alt="shape">
                             <img class="shape-1" src="assets/images/services-shape-1.svg" alt="shape">
@@ -240,13 +256,15 @@
                         </div>
                         <div class="services-content mt-30">
                             <h4 class="services-title"><a href="#">1</a></h4>
-                            <p class="text">Mengetahui laporan pemasukan dan pengeluaran keuangan dalam periode tertentu.</p>
+                            <p class="text">Mengetahui laporan pemasukan dan pengeluaran keuangan dalam 
+                                periode tertentu.</p>
                         </div>
                     </div> <!-- single services -->
                 </div>
                 <!-- single services -->
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" 
+                    data-wow-delay="0.5s">
                         <div class="services-icon">
                             <img class="shape" src="assets/images/services-shape.svg" alt="shape">
                             <img class="shape-1" src="assets/images/services-shape-2.svg" alt="shape">
@@ -254,7 +272,8 @@
                         </div>
                         <div class="services-content mt-30">
                             <h4 class="services-title"><a href="#">2</a></h4>
-                            <p class="text">Mengawasi tingkat keuangan dalam bentuk data diagram statistik dari setiap periode yang ditentukan.</p>
+                            <p class="text">Mengawasi tingkat keuangan dalam bentuk data diagram 
+                                statistik dari setiap periode yang ditentukan.</p>
                         </div>
                     </div>
                 </div>
@@ -263,7 +282,8 @@
             <div class="row justify-content-center">
                 <!-- single services -->
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" 
+                    data-wow-delay="0.8s">
                         <div class="services-icon">
                             <img class="shape" src="assets/images/services-shape.svg" alt="shape">
                             <img class="shape-1" src="assets/images/services-shape-3.svg" alt="shape">
@@ -277,7 +297,8 @@
                 </div>
                 <!-- single services -->
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" 
+                    data-wow-delay="0.8s">
                         <div class="services-icon">
                             <img class="shape" src="assets/images/services-shape.svg" alt="shape">
                             <img class="shape-1" src="assets/images/services-shape-2.svg" alt="shape">
@@ -302,17 +323,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" 
+                    data-wow-delay="0.5s">
                         <div class="section-title">
                             <div class="line"></div>
                             <h3 class="title">Batasan <span>Masalah</span></h3>
                         </div>
                         <p class="text">
-                            Berdasarkan uraian rumusan masalah dan tujuan diatas, maka dalam website iPocket ini hanya membahas dan berisi mengenai laporan pemasukan dan pengeluaran pribadi seseorang dalam periode tertentu, data statistik berupa diagram berdasarkan pada pemasukan dan pengeluaran pada periode tertentu, serta perhitungan untuk menentukan dana impian pengguna.
+                            Berdasarkan uraian rumusan masalah dan tujuan diatas, maka dalam website 
+                            iPocket ini hanya membahas dan berisi mengenai laporan pemasukan dan 
+                            pengeluaran pribadi seseorang dalam periode tertentu, data statistik berupa 
+                            diagram berdasarkan pada pemasukan dan pengeluaran pada periode tertentu, 
+                            serta perhitungan untuk menentukan dana impian pengguna.
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" 
+                    data-wow-delay="0.5s">
                         <img src="assets/images/about1.svg" alt="about">
                     </div>
                 </div>
@@ -334,13 +361,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 order-lg-last">
-                    <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" 
+                    data-wow-delay="0.5s">
                         <div class="section-title">
                             <div class="line"></div>
                             <h3 class="title">Manajemen <span> Keuangan Pribadi</span></h3>
                         </div> <!-- section title -->
                         <p class="text">
-                            Manajemen keuangan pribadi adalah seni dan ilmu mengelola sumber daya (money) dari unit individual / rumah tangga (Gitman 2002).
+                            Manajemen keuangan pribadi adalah seni dan ilmu mengelola sumber daya (money) 
+                            dari unit individual / rumah tangga (Gitman 2002).
                             Membahas tentang kedisiplinan yang merupakan kesadaran diri untuk mematuhi
                             aturan serta kemampuan diri untuk menyesuaikan dirinya dengan perubahan,
                             maka secara eksplisit telah menyentuh kontrol diri (self control).
@@ -350,7 +379,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-first">
-                    <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" 
+                    data-wow-delay="0.5s">
                         <img src="assets/images/about2.svg" alt="about">
                     </div>
                 </div>
@@ -376,7 +406,8 @@
             <div class="row justify-content-center">
                 <!-- Bela Tertiana -->
                 <div class="col-lg-3 col-md-6 col-sm-12 ">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" 
+                    data-wow-delay="0.2s">
 
                         <div class="thumb d-flex justify-content-sm-center">
                             <figure>
@@ -401,7 +432,8 @@
                 </div>
                 <!-- Nada Navis -->
                 <div class="col-lg-3 col-md-6 col-sm-12 ">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" 
+                    data-wow-delay="0.2s">
 
                         <div class="thumb d-flex justify-content-sm-center">
                             <figure>
@@ -426,7 +458,8 @@
                 </div>
                 <!-- Putu Ayu -->
                 <div class="col-lg-3 col-md-6 col-sm-12 ">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" 
+                    data-wow-delay="0.2s">
 
                         <div class="thumb d-flex justify-content-sm-center">
                             <figure>
@@ -454,7 +487,8 @@
             <div class="row justify-content-center">
                 <!-- Rinda -->
                 <div class="col-lg-3 col-md-6 col-sm-12 ">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" 
+                    data-wow-delay="0.2s">
 
                         <div class="thumb d-flex justify-content-sm-center">
                             <figure>
@@ -479,7 +513,8 @@
                 </div>
                 <!-- Ayub R -->
                 <div class="col-lg-3 col-md-6 col-sm-12 ">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" 
+                    data-wow-delay="0.2s">
 
                         <div class="thumb d-flex justify-content-sm-center">
                             <figure>
@@ -517,7 +552,8 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="subscribe-content mt-45">
-                            <h2 class="subscribe-title">Subscribe Our Newsletter <span>get reguler updates</span></h2>
+                            <h2 class="subscribe-title">Subscribe Our Newsletter 
+                                <span>get reguler updates</span></h2>
                         </div>
                     </div>
                     <div class="col-lg-6">

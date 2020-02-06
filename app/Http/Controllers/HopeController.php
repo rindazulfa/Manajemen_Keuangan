@@ -19,7 +19,8 @@ class HopeController extends Controller
     {
         // id, name,cost,month,inflation,per_month, upcoming_costs
         $hopes = DB::table('hopes')
-        ->select('hopes.id','hopes.name','hopes.cost','hopes.month','hopes.inflation','hopes.per_month','hopes.upcoming_costs')
+        ->select('hopes.id','hopes.name','hopes.cost','hopes.month'
+        ,'hopes.inflation','hopes.per_month','hopes.upcoming_costs')
         ->get();
         $data['hopes'] = $hopes;
         return view('danaimpian.index', $data);
@@ -38,7 +39,7 @@ class HopeController extends Controller
 
     }
 
-    /**
+    /** 
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request

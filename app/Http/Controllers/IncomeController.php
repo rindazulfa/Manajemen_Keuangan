@@ -17,7 +17,8 @@ class IncomeController extends Controller
     {
         //Tanggal,Nama, Total,Pemberi, Kategori, Metode
         $incomes = DB::table('incomes')
-        ->select('incomes.id','incomes.date','incomes.name','incomes.total','incomes.from','income_categories.name as category','methods.name as method')
+        ->select('incomes.id','incomes.date','incomes.name','incomes.total'
+        ,'incomes.from','income_categories.name as category','methods.name as method')
         ->join('income_categories','incomes.income_categories_id','=','income_categories.id')
         ->join('methods','incomes.methods_id','=','methods.id')
         ->get();

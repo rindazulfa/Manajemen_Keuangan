@@ -11,7 +11,8 @@
             <div class="page-breadcrumb">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/dashboard" class="breadcrumb-link">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="/dashboard" 
+                        class="breadcrumb-link">Dashboard</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Form Pemasukan</li>
                     </ol>
                 </nav>
