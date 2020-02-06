@@ -16,7 +16,8 @@ class ExpenseController extends Controller
     {
         // Tanggal, Nama, Total, Penerima, Kategori, Metode
         $expenses = DB::table('expenses')
-            ->select('expenses.id', 'expenses.date', 'expenses.name as name', 'expenses.total', 'expenses.to', 'expense_categories.name as category', 'methods.name as method')
+            ->select('expenses.id', 'expenses.date', 'expenses.name as name', 
+            'expenses.total', 'expenses.to', 'expense_categories.name as category', 'methods.name as method')
             ->join('expense_categories', 'expenses.expense_categories_id', '=', 'expense_categories.id')
             ->join('methods', 'expenses.methods_id', '=', 'methods.id')
             ->get();

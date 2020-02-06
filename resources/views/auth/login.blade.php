@@ -4,7 +4,9 @@
 
 
         <div class="card bg-dark">
-            <div class="card-header text-center p-3 mb-2 bg-dark text-white "><a href="../index.html"><img  class="mb-2" src="../assets/images/logo.png" alt="logo"></a><span class="splash-description">Silakan login terlebih dahulu ;))</span></div>
+            <div class="card-header text-center p-3 mb-2 bg-dark text-white ">
+                <a href="../index.html"><img  class="mb-2" src="../assets/images/logo.png" alt="logo"></a>
+                <span class="splash-description">Silakan login terlebih dahulu ;))</span></div>
             <div class="card-body bg-dark">
                 @if($errors->any())
                 <div class="alert alert-danger" role="alert">
@@ -14,10 +16,12 @@
                 <form method="POST" action="{{Route('login')}}">
                     @csrf
                     <div class="form-group">
-                        <input class="form-control form-control-lg" id="email" type="text" name="email" placeholder="Email" autocomplete="off">
+                        <input class="form-control form-control-lg" id="email" 
+                        type="text" name="email" placeholder="Email" autocomplete="off">
                     </div>
                     <div class="form-group">
-                        <input class="form-control form-control-lg" id="password" type="password" name="password" placeholder="Kata Sandi">
+                        <input class="form-control form-control-lg" id="password" type="password" 
+                        name="password" placeholder="Kata Sandi">
                     </div>
 
                     <button type="submit" class="btn btn-secondary btn-lg btn-block">Login</button>

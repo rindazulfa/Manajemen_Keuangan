@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{asset('vendor/charts/c3charts/c3.css')}}">
     <link rel="stylesheet" href="{{asset('vendor/fonts/flag-icon-css/flag-icon.min.css')}}">
 
-    <title>Bumblebee - Manajemen Keuangan</title>
+    <title>Bumblebee - Manajemen Keuangan</title>   
 </head>
 
 <body>
@@ -33,19 +33,24 @@
                 <a class="navbar-brand" href="#">
                     <img src="{{ asset('assets/images/logo.png') }}" alt="Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto navbar-right-top">
                         <li class="nav-item dropdown nav-user">
-                            <a class="nav-link  fas fa-user mr-3" style="color: #fe8a90;" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
-                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+                            <a class="nav-link  fas fa-user mr-3" style="color: #fe8a90;" href="#" 
+                            id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" 
+                            aria-expanded="false"></a>
+                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" 
+                            aria-labelledby="navbarDropdownMenuLink2">
                                 <div class="nav-user-info">
                                     <h5 class="mb-0 text-white nav-user-name">{{Auth()->user()->name}}</h5>
                                     <span class="status"></span><span class="ml-9">Tersedia</span>
                                 </div>
-                                <a class="dropdown-item" href="{{Route('logout')}}"><i class="fas fa-power-off mr-2"></i>Keluar</a>
+                                <a class="dropdown-item" href="{{Route('logout')}}">
+                                    <i class="fas fa-power-off mr-2"></i>Keluar</a>
                             </div>
                         </li>
                     </ul>
@@ -63,7 +68,9 @@
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <a class="d-xl-none d-lg-none " href="index.html">Dashboard iPocket</a>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+                    aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <ul class="navbar-nav flex-column">
@@ -71,10 +78,14 @@
                             MENU
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link text-white" href="/dashboard"><i class="fa fa-fw fa-user-circle text-white"></i>Dashboard <span class="badge badge-success"></span></a>
+                            <a class="nav-link text-white" href="/dashboard">
+                            <i class="fa fa-fw fa-user-circle text-white">                                
+                            </i>Dashboard <span class="badge badge-success"></span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="/pemasukan" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="far fa-money-bill-alt text-white"></i>Pemasukan</a>
+                            <a class="nav-link text-white" href="/pemasukan" data-toggle="collapse" 
+                            aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5">
+                            <i class="far fa-money-bill-alt text-white"></i>Pemasukan</a>
                             <div id="submenu-5" class="collapse submenu" style="">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
@@ -87,7 +98,9 @@
                             </div>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link text-white" href="/pengeluaran" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-6"><i class="fas fa-shopping-cart text-white"></i>Pengeluaran</a>
+                            <a class="nav-link text-white" href="/pengeluaran" data-toggle="collapse" 
+                            aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-6">
+                            <i class="fas fa-shopping-cart text-white"></i>Pengeluaran</a>
                             <div id="submenu-6" class="collapse submenu" style="">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
@@ -100,7 +113,9 @@
                             </div>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link text-white" href="/danaimpian" data-toggle="collapse" aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-7"><i class="fas fa-paper-plane text-white"></i>Dana Impian</a>
+                            <a class="nav-link text-white" href="/danaimpian" data-toggle="collapse" 
+                            aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-7">
+                            <i class="fas fa-paper-plane text-white"></i>Dana Impian</a>
                             <div id="submenu-7" class="collapse submenu" style="">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">

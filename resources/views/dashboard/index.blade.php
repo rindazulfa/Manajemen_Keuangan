@@ -34,8 +34,8 @@
     <!-- ============================================================== -->
     <!-- total pemasukkan   -->
     <!-- ============================================================== -->
-    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-        <div class="card">
+    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="card border-3 border-top border-top-primary">
             <div class="card-body">
                 <div class="d-inline-block">
                     <h5 class="text-muted">Total Pemasukan</h5>
@@ -43,7 +43,7 @@
                     <h2 class="mb-0" id="biaya">Rp {{$hasil }}</h2>
                 </div>
                 <div class="float-right icon-circle-small  icon-box-sm  bg-brand-light mt-1">
-                    <i class="fa fa-money-bill-alt fa-f w fa-sm text-brand"></i>
+                    <i class="fa fa-fw fa-arrow-down fa-fw fa-sm text-brand"></i>
                 </div>
             </div>
         </div>
@@ -54,8 +54,8 @@
     <!-- ============================================================== -->
     <!-- sisa uang   -->
     <!-- ============================================================== -->
-    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-        <div class="card">
+    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="card border-3 border-top border-top-primary">
             <div class="card-body">
                 <div class="d-inline-block">
                     <h5 class="text-muted">Sisa Uang</h5>
@@ -74,8 +74,8 @@
     <!-- ============================================================== -->
     <!-- total pengeluaran   -->
     <!-- ============================================================== -->
-    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-        <div class="card">
+    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="card border-3 border-top border-top-primary">
             <div class="card-body">
                 <div class="d-inline-block">
                     <h5 class="text-muted">Total Pengeluaran</h5>
@@ -83,7 +83,7 @@
                     <h2 class="mb-0" id="biaya">Rp {{ $keluar }}</h2>
                 </div>
                 <div class="float-right icon-circle-small  icon-box-sm  bg-brand-light mt-1">
-                    <i class="fa fa-money-bill-alt fa-fw fa-sm text-brand"></i>
+                    <i class="fa fa-fw fa-arrow-up fa-fw fa-sm text-brand"></i>
                 </div>
             </div>
         </div>

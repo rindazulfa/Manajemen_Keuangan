@@ -16,14 +16,19 @@
                                 <!-- Nama Rencana -->
                                 <div class="form-group col-sm-6 col-xl-6 col-lg-6 col-md-6 col-6">
                                     <label for="namalifeplan">Nama Rencana</label>
-                                    <input id="namalifeplan" type="text" name="name" data-parsley-trigger="change" required="" placeholder="Masukkan Rencanamu" autocomplete="off" class="form-control">
+                                    <input id="namalifeplan" type="text" name="name" 
+                                    data-parsley-trigger="change" required="" placeholder="Masukkan Rencanamu" 
+                                    autocomplete="off" class="form-control">
                                 </div>
 
                                   <!-- Target Rencana-->
                                   <div class="form-group col-sm-6 col-xl-6 col-lg-6 col-md-6 col-6">
                                     <label for="inputUserName">Target Rencana</label>
-                                        <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                                            <input type="month" id="month" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
+                                        <div class="input-group date" id="datetimepicker4" 
+                                        data-target-input="nearest">
+                                            <input type="month" id="month" 
+                                            class="form-control datetimepicker-input" 
+                                            data-target="#datetimepicker4" />
                                             <!-- <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
                                             </div> -->
@@ -34,7 +39,9 @@
                                 <!-- Biaya -->
                                 <div class="form-group col-sm-6 col-xl-6 col-lg-6 col-md-6 col-6">
                                     <label for="biaya">Biaya</label>
-                                    <input id="biaya" type="text" name="email" data-parsley-trigger="change" required="" placeholder="Masukkan Biaya yang dibutuhkan" autocomplete="off" class="form-control">
+                                    <input id="biaya" type="text" name="email" data-parsley-trigger="change" 
+                                    required="" placeholder="Masukkan Biaya yang dibutuhkan" autocomplete="off" 
+                                    class="form-control">
                                 </div>
                                 <!-- Kenaikan Harga -->
                                 <div class="form-group col-sm-6 col-xl-6 col-lg-6 col-md-6 col-6">
@@ -46,12 +53,14 @@
                                 <!-- Keterangan -->
                                 <div class="form-group col-sm-6 col-xl-6 col-lg-6 col-md-6 col-6">
                                     <label for="inflasi">Inflasi</label>
-                                    <input id="inflasi" disabled data-parsley-equalto="#inputPassword" type="text"  value="3%"  class="form-control">
+                                    <input id="inflasi" disabled data-parsley-equalto="#inputPassword" 
+                                    type="text"  value="3%"  class="form-control">
                                 </div>
 
                             </div>
                             <div  style=" display: flex; align-items: center; justify-content: center;">
-                                <button id="hitung" type="button" class="btn btn-primary hitung" data-id="hitung">Hitung</button>
+                                <button id="hitung" type="button" class="btn btn-primary hitung" 
+                                data-id="hitung">Hitung</button>
                              </div>
                         </form>
                     </div>
@@ -66,7 +75,8 @@
 </section>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" 
+aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
 
@@ -89,7 +99,8 @@
                                 </td>
                                 <td class="report-subtotal text-right" id="assets-type-1-total-data">
                                 </td>
-                                <td class="border-top-thin" id="hasilnama" name="hasilnama" style="padding-left:80px;">
+                                <td class="border-top-thin" id="hasilnama" name="hasilnama" 
+                                style="padding-left:80px;">
 
                                 </td>
                          </tr>
