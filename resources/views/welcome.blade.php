@@ -537,7 +537,6 @@
                             <a class="logo" href="#">
                                 <img src="{{asset('assets/images/logo.png')}}" alt="logo">
                             </a>
-                            <p class="text">Lorem ipsum dolor sit amet consetetur sadipscing elitr, sederfs diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
                             <ul class="social">
                                 <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
                                 <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
@@ -551,13 +550,13 @@
                     <div class="col-lg-3 col-md-5 col-sm-5">
                         <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
                             <div class="footer-title">
-                                <h4 class="title">Contact Us</h4>
+                                <h4 class="title">Hubungi Kami</h4>
                             </div>
                             <ul class="contact">
-                                <li>0888</li>
+                                <li>-</li>
                                 <li>Bumblebee@gmail.com</li>
                                 <li>www.bumblebee.com</li>
-                                <li>123 Stree New York City , United <br> States Of America 750.</li>
+                                <li>Universitas Dinamika</li>
                             </ul>
                         </div>
                     </div>

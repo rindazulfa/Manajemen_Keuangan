@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{asset('vendor/charts/c3charts/c3.css')}}">
     <link rel="stylesheet" href="{{asset('vendor/fonts/flag-icon-css/flag-icon.min.css')}}">
 
-    <title>Bumblebee - Manajemen Keuangan</title>
+    <title>Bumblebee - Manajemen Keuangan</title>   
 </head>
 
 <body>
