@@ -14,7 +14,7 @@
                         <li class="breadcrumb-item"><a href="/dashboard" class="breadcrumb-link">Dashboard</a></li>
                         <li class="breadcrumb-item active" aria-current="page">List Pengeluaran</li>
                     </ol>
-                </nav>
+                </nav>  
             </div>
         </div>
     </div>
