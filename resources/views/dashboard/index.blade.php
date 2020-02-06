@@ -162,7 +162,7 @@
                     </thead>
                     <tbody>
                         @foreach($transaction as $key)
-                        @php $date = date('Y-m',strtotime($key['date'])) @endphp
+                        @php $date = date('Y-m',strtotime($key['date']))@endphp
                         <tr>
                             <th scope="row">{{ $loop->iteration }}</th>
                             <td>{{$date }}</td>
