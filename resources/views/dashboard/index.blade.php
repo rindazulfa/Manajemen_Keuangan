@@ -402,8 +402,8 @@
 
                 };
 
-                chartku = new Chart(ctx, config);
-                window.myPie = chartku;
+                    chartku = new Chart(ctx, config);
+                    window.myPie = chartku;
             });
         },
         error: function(rtnData) {
