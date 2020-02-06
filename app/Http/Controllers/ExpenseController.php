@@ -23,7 +23,7 @@ class ExpenseController extends Controller
 
         $data['expenses'] = $expenses;
         return view('pengeluaran.index', $data);
-        
+
     }
 
     /**
@@ -49,10 +49,11 @@ class ExpenseController extends Controller
      */
     public function store(Request $request)
     {
+        $str = str_replace('.','',$request->get('total'));
         DB::table('expenses')->insert([
             'name' => $request->get('name'),
             'date' => $request->get('date'),
-            'total' => $request->get('total'),
+            'total' => $str,
             'to' => $request->get('to'),
             'expense_categories_id' => $request->get('category_id'),
             'methods_id' => $request->get('method_id'),

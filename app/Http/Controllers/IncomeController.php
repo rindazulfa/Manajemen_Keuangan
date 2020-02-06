@@ -48,10 +48,11 @@ class IncomeController extends Controller
      */
     public function store(Request $request)
     {
+        $str = str_replace('.','',$request->get('total'));
         DB::table('incomes')->insert([
             'name' => $request->get('name'),
             'date' => $request->get('date'),
-            'total' => $request->get('total'),
+            'total' => $str,
             'from' => $request->get('from'),
             'income_categories_id' => $request->get('category_id'),
             'methods_id' => $request->get('method_id'),
