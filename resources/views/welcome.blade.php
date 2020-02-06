@@ -63,7 +63,7 @@
     <!--====== HEADER PART START ======-->
 
     <header class="header-area">
-        <div class="navbar-area">
+        <div class="navbar-area ">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -92,7 +92,7 @@
                                         <a class="page-scroll" href="#batasan">Batasan Masalah</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#konsep">Konsep Dasar</a>
+                                        <a class="page-scroll" href="#konsep">Landasan Teori</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#team">Team</a>
@@ -103,7 +103,7 @@
                             <!-- navbar collapse -->
 
                             <div class="navbar-btn d-none d-sm-inline-block">
-                                <a class="main-btn" data-scroll-nav="0" href="/register">Register</a>
+                                <a class="main-btn" data-scroll-nav="0" href="/login">Masuk</a>
                             </div>
                         </nav>
                     </div>
@@ -119,7 +119,7 @@
                             <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Bumblebee</h3>
                             <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Aplikasi akutansi gratis</h2>
                             <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Yuk, Buruan Gabung!! Atur Keuangan Pribadimu & Capai Target Impianmu!!</p>
-                            <a href="/dashboard" rel="nofollow" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Memulai</a>
+                            <a href="/register" rel="nofollow" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Daftar Sekarang!</a>
                         </div>
                     </div>
                 </div>
@@ -179,15 +179,18 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- row -->
+            <div class="row justify-content-center">
                 <!-- single services -->
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-services text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
                         <div class="services-icon">
                             <img class="shape" src="assets/images/services-shape.svg" alt="shape">
                             <img class="shape-1" src="assets/images/services-shape-3.svg" alt="shape">
                             <i class="lni-bolt-alt"></i>
                         </div>
-                        <div class="services-content mt-30">
+                        <div class="services-content">
                             <h4 class="services-title"><a href="#">3</a></h4>
                             <p class="text">Bagaimana mengontrol dan mengawasi dari uang yang dimiliki saat ini ?</p>
                         </div>
@@ -198,16 +201,15 @@
                     <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
                         <div class="services-icon">
                             <img class="shape" src="assets/images/services-shape.svg" alt="shape">
-                            <img class="shape-1" src="assets/images/services-shape-3.svg" alt="shape">
-                            <i class="lni-bolt-alt"></i>
+                            <img class="shape-1" src="assets/images/services-shape-1.svg" alt="shape">
+                            <i class="lni-plane"></i>
                         </div>
-                        <div class="services-content mt-30">
+                        <div class="services-content">
                             <h4 class="services-title"><a href="#">4</a></h4>
                             <p class="text">Bagaimana mengetahui dan menentukan rencana yang akan mendatang?</p>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -256,6 +258,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- row -->
+            <div class="row justify-content-center">
                 <!-- single services -->
                 <div class="col-lg-4 col-md-7 col-sm-8">
                     <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
@@ -275,8 +280,8 @@
                     <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
                         <div class="services-icon">
                             <img class="shape" src="assets/images/services-shape.svg" alt="shape">
-                            <img class="shape-1" src="assets/images/services-shape-3.svg" alt="shape">
-                            <i class="lni-bolt-alt"></i>
+                            <img class="shape-1" src="assets/images/services-shape-2.svg" alt="shape">
+                            <i class="lni-plane"></i>
                         </div>
                         <div class="services-content mt-30">
                             <h4 class="services-title"><a href="#">4</a></h4>
@@ -332,11 +337,15 @@
                     <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="section-title">
                             <div class="line"></div>
-                            <h3 class="title">Konsep <span> Dasar</span></h3>
+                            <h3 class="title">Manajemen <span> Keuangan Pribadi</span></h3>
                         </div> <!-- section title -->
                         <p class="text">
-                            Pengguna memasukkan income (pemasukan) dalam bentuk Tunai atau Bank. Dan mengatur jumlah pemasukan, darimana pemasukkan didapat, tanggal, keterangan, dan terdapat kategori pemasukan seperti dari bisnis, gaji, keluarga, beasiswa, komisi. Agar dapat mengetahui semua pemasukan pengguna. Pengguna juga dapat melakukan expense (pengeluaran) dalam bentuk Tunai atau Bank. Dan mengatur jumlah pengeluaran, kemana pengeluaran dikeluarkan, tanggal, keterangan, dan terdapat kategori pengeluaran seperti untuk makan, tagihan, belanja, travel, Pendidikan, hiburan, kartu kredit, kesehatan, menyewa, pajak, kendaraan.
-                            Digolongkan berdasarkan kategori pemasukan & pengeluaran. Mengetahui jumlah sisa uang yang dimiliki. Dengan menghitung total pendapatan dengan total pengeluaran. Dan dapat digolongkan juga dengan berdasarkan setiap bagian kategori pemasukan & pengeluaran yang ada.
+                            Manajemen keuangan pribadi adalah seni dan ilmu mengelola sumber daya (money) dari unit individual / rumah tangga (Gitman 2002).
+                            Membahas tentang kedisiplinan yang merupakan kesadaran diri untuk mematuhi
+                            aturan serta kemampuan diri untuk menyesuaikan dirinya dengan perubahan,
+                            maka secara eksplisit telah menyentuh kontrol diri (self control).
+                            Hal ini berpijak pada alasan bahwa sukses atau tidaknya seseorang juga salah
+                            satunya turut dipengaruhi oleh kontrol diri (Tangney, Baumeister & Boone 2004).
                         </p>
                     </div>
                 </div>
@@ -359,7 +368,7 @@
                     <!-- section title -->
                     <div class="section-title text-center pb-40">
                         <div class="line m-auto"></div>
-                        <h3 class="title">Haloo guys;)) <span> Yuk kepoin website kita!!</span></h3>
+                        <h3 class="title">Kelompok<span> Bumblebee</span></h3>
                     </div>
                 </div>
             </div>
@@ -371,7 +380,7 @@
 
                         <div class="thumb d-flex justify-content-sm-center">
                             <figure>
-                                <img class="img-fluid" src="assets/images/terti.jpeg" alt="" />
+                                <img class="img-fluid" src="assets/images/terti.jpg" alt="" />
                             </figure>
                         </div>
                         <div class="meta-text text-sm-center">
@@ -396,7 +405,7 @@
 
                         <div class="thumb d-flex justify-content-sm-center">
                             <figure>
-                                <img class="img-fluid" src="assets/images/nada.jpeg" alt="" />
+                                <img class="img-fluid" src="assets/images/nada.jpg" alt="" />
                             </figure>
                         </div>
                         <div class="meta-text text-sm-center">
@@ -421,7 +430,7 @@
 
                         <div class="thumb d-flex justify-content-sm-center">
                             <figure>
-                                <img class="img-fluid" src="assets/images/amel.jpeg" alt="" />
+                                <img class="img-fluid" src="assets/images/amel.jpg" alt="" />
                             </figure>
                         </div>
                         <div class="meta-text text-sm-center">
@@ -440,13 +449,16 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- row -->
+            <div class="row justify-content-center">
                 <!-- Rinda -->
                 <div class="col-lg-3 col-md-6 col-sm-12 ">
                     <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
 
                         <div class="thumb d-flex justify-content-sm-center">
                             <figure>
-                                <img class="img-fluid" src="assets/images/rinda.jpeg" alt="" />
+                                <img class="img-fluid" src="assets/images/rinda.jpg" alt="" />
                             </figure>
                         </div>
                         <div class="meta-text text-sm-center">
